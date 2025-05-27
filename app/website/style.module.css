@@ -896,13 +896,13 @@
            display: flex;
        }
        .cart_icon .span1 {
-           font-size: 16.5px;
+           font-size: 17px;
            font-weight: 700;
            color: #222;
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -15px;
+           margin-top: 15px;
            margin-left: 28px;
            align-items: center;
            justify-content: center;
@@ -911,14 +911,14 @@
            position: absolute;
        }
        .cart_icon .span2 {
-           font-size: 16.5px;
+           font-size: 17px;
            font-weight: 700;
            color: #222;
            position: relative;
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: 22px;
+           margin-top: 70px;
            margin-left: 35px;
            position: absolute;
            align-items: center;
@@ -1873,7 +1873,7 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -11px;
+           margin-top: 15px;
            margin-left: 37px;
            align-items: center;
            justify-content: center;
@@ -1889,7 +1889,7 @@
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: 25px;
+           margin-top: 90px;
            margin-left: 35px;
            position: absolute;
            align-items: center;
@@ -2364,14 +2364,14 @@
            margin-left: 210px;
        }
        .cart_icon .span1 {
-           font-size: 1.5em;
+           font-size: 1.4em;
            font-weight: 700;
            color: #222;
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -70px;
-           margin-left: 50px;
+           margin-top: -110px;
+           margin-left: 270px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2379,15 +2379,15 @@
            position: absolute;
        }
        .cart_icon .span2 {
-           font-size: 1.5em;
+           font-size: 1.4em;
            font-weight: 700;
            color: #222;
            position: relative;
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: -10px;
-           margin-left: 90px;
+           margin-top: -20px;
+           margin-left: 305px;
            position: absolute;
            align-items: center;
            justify-content: center;

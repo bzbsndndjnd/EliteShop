@@ -378,7 +378,7 @@ const logout=()=>{
           <div className={style.phone}><p className={style.p1}>© 2025 متجر النخبة. جميع الحقوق محفوظة.</p></div>
           <div className={style.p}>
           <p className={style.p2}><a href="mailto:MohammedMohammed@gmail.com">MohammedMohammed@gmail.com :</a>تواصل معنا عبر البريد  </p>
-          <p className={style.p1}><a href="">059 513 6155 :رقم الجوال</a></p>
+          <p className={style.p1}><a href="">056 728 5197 :رقم الجوال</a></p>
           </div>
           </footer>
         </>
