@@ -15,11 +15,11 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// تجنب تشغيل التحليلات في بيئات السيرفر (SSR)
-let analytics;
-if (typeof window !== 'undefined') {
-    analytics = getAnalytics(app);
-}
+// // تجنب تشغيل التحليلات في بيئات السيرفر (SSR)
+// let analytics;
+// if (typeof window !== 'undefined') {
+//     analytics = getAnalytics(app);
+// }
 
 const db = getDatabase(app);
 

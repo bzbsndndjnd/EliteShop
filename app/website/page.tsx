@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { db, ref, set, get } from "./firebase";
 import { update } from 'firebase/database';
+import Image from "next/image";
 
 
 
@@ -18,7 +19,7 @@ export default function Websites(){
   const[enter,setEnter]=useState(true);
   const[inputValue,setInputValue]=useState("");
   const[show,setShow]=useState(true);
-  const[prise,setPrise]=useState(140);
+  const[prise]=useState(140);
   const[Balanced,setBalanced]=useState(0);
   const[count,setCount]=useState(0);
   const[cardsClock,setCardsClock]=useState(false);
@@ -128,7 +129,7 @@ export default function Websites(){
   useEffect(()=>{
     const savedBalanced = localStorage.getItem(gmail+'_Balance');
     if(savedBalanced) setBalanced(parseFloat(savedBalanced));
-  },[]);
+  },[gmail]);
 
   const fetchBalance = () => {
   const balanceRef = ref(db, 'users/' + gmail.replace('.', '_') + '/wallet');
@@ -274,7 +275,7 @@ const logout=()=>{
             </div>
         </header>
         <section className={style.sec1}>
-        <img src="\sec.png" alt="" className={style.img}/>
+        <Image src="/sec.png" alt="security icon" className={style.img} width={300} height={300}/>
         <div className={style.overlay}>
         <h1 className={style.h1}>محفظة الكترونية <br/>متعددة</h1>
         <p className={style.p}>ادارة جميع معاملاتك بسهولة</p>
@@ -293,7 +294,7 @@ const logout=()=>{
               </a>}
             {CardsClock.map((CardsClock,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <img className={style.img} src={CardsClock.img} alt="" />
+              <Image className={style.img} src={CardsClock.img} alt="" />
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -313,7 +314,7 @@ const logout=()=>{
               </a>}
             {CardsWatches.map((CardsWatches,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <img className={style.img} src={CardsWatches.img} alt="" />
+              <Image className={style.img} src={CardsWatches.img} alt="" />
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -335,7 +336,7 @@ const logout=()=>{
               </a>}
             {cardsPhone.map((cardsPhone,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <img className={style.img} src={cardsPhone.img} alt="" />
+              <Image className={style.img} src={cardsPhone.img} alt="" />
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -347,7 +348,7 @@ const logout=()=>{
 }
           {show &&<div className={style.content}>
             <div className={style.card}>
-              <img className={style.img} src="card1.png" alt="" />
+              <Image className={style.img} src="/card1.png" alt="" width={300} height={300}/>
               <div className={style.info}>
                 <h3 className={style.h3}>الساعات</h3>
                 <p className={style.p}>ساعات أنيقة وعصرية تضيف <br/>لمسة فخمة لإطلالتك</p>
@@ -355,7 +356,7 @@ const logout=()=>{
               </div>
             </div>
              <div className={style.card}>
-              <img className={style.img} src="card2.png" alt="" />
+              <Image className={style.img} src="/card2.png" alt="" width={300} height={300}/>
               <div className={style.info}>
               <h3 className={style.h3}>الأحذية</h3>
               <p className={style.p}>راحة وأناقة في كل خطوة مع تشكيلتنا المتنوعة من الأحذية.</p>
@@ -363,7 +364,7 @@ const logout=()=>{
               </div>
             </div>
              <div className={style.card}>
-              <img className={style.img} src="card3.png" alt="" />
+              <Image className={style.img} src="/card3.png" alt="" width={300} height={300}/>
               <div className={style.info}>
                 <h3 className={style.h3}>الجوالات </h3>
                 <p className={style.p}>أحدث الجوالات الذكية بأفضل الأسعار والعروض المميزة!</p>
