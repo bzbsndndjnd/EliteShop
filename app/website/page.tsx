@@ -77,8 +77,8 @@ export default function Websites(){
     toast.error("يجب تسجيل الدخول أولاً!");
     return;
   }
-  if(Balanced === 0){
-    const Balance = prompt("ادخل رصيد محفظتك: ");
+  const Balance = prompt("ادخل رصيد محفظتك: ");
+  if(Balanced === 0 && Balance !== null){
     const parsedBalance = parseFloat(Balance);
     if(!isNaN(parsedBalance) && isFinite(parsedBalance)){
     setBalanced(parsedBalance);
