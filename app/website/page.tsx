@@ -275,7 +275,7 @@ const logout=()=>{
             </div>
         </header>
         <section className={style.sec1}>
-        <Image src="/sec.png" alt="security icon" className={style.img} width={300} height={300}/>
+        <Image src="/sec.png" alt="security icon" className={style.img} width={1000} height={1000}/>
         <div className={style.overlay}>
         <h1 className={style.h1}>محفظة الكترونية <br/>متعددة</h1>
         <p className={style.p}>ادارة جميع معاملاتك بسهولة</p>
@@ -294,7 +294,7 @@ const logout=()=>{
               </a>}
             {clocksCardsData .map((clocksCardsData ,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={`/${clocksCardsData .img}`} alt="" />
+              <Image className={style.img} src={`/${clocksCardsData .img}`} alt="" width={400} height={400}/>
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -314,7 +314,7 @@ const logout=()=>{
               </a>}
             {CardsWatches.map((CardsWatches,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={`/${CardsWatches.img}`} alt="" />
+              <Image className={style.img} src={`/${CardsWatches.img}`} alt="" width={400} height={400}/>
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -336,7 +336,7 @@ const logout=()=>{
               </a>}
             {cardsPhone.map((cardsPhone,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={`/${cardsPhone.img}`} alt="" />
+              <Image className={style.img} src={`/${cardsPhone.img}`} alt="" width={400} height={400}/>
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -348,7 +348,7 @@ const logout=()=>{
 }
           {show &&<div className={style.content}>
             <div className={style.card}>
-              <Image className={style.img} src="/card1.png" alt="" width={300} height={300}/>
+              <Image className={style.img} src="/card1.png" alt="" width={400} height={400}/>
               <div className={style.info}>
                 <h3 className={style.h3}>الساعات</h3>
                 <p className={style.p}>ساعات أنيقة وعصرية تضيف <br/>لمسة فخمة لإطلالتك</p>
@@ -356,7 +356,7 @@ const logout=()=>{
               </div>
             </div>
              <div className={style.card}>
-              <Image className={style.img} src="/card2.png" alt="" width={300} height={300}/>
+              <Image className={style.img} src="/card2.png" alt="" width={400} height={400}/>
               <div className={style.info}>
               <h3 className={style.h3}>الأحذية</h3>
               <p className={style.p}>راحة وأناقة في كل خطوة مع تشكيلتنا المتنوعة من الأحذية.</p>
@@ -364,7 +364,7 @@ const logout=()=>{
               </div>
             </div>
              <div className={style.card}>
-              <Image className={style.img} src="/card3.png" alt="" width={300} height={300}/>
+              <Image className={style.img} src="/card3.png" alt="" width={400} height={400}/>
               <div className={style.info}>
                 <h3 className={style.h3}>الجوالات </h3>
                 <p className={style.p}>أحدث الجوالات الذكية بأفضل الأسعار والعروض المميزة!</p>
