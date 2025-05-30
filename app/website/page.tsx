@@ -22,11 +22,11 @@ export default function Websites(){
   const[prise]=useState(140);
   const[Balanced,setBalanced]=useState(0);
   const[count,setCount]=useState(0);
-  const[cardsClock,setCardsClock]=useState(false);
+  const[showClocksCards,setShowClocksCards]=useState(false);
   const[showCardsWatches,setShowCardsWatches]=useState(false);
   const[CardsPhone,setCardsPhone]=useState(false);
   const[Buy,setBuy]=useState(false);
-  const CardsClock=[
+  const clocksCardsData =[
     {id:'chock1',img:"chock1.jpeg"},
     {id:'chock2',img:"chock2.jpeg"},
     {id:'chock3',img:"chock3.jpeg"},
@@ -53,7 +53,7 @@ export default function Websites(){
   const transformer1=()=>{
     if(show){
       setShow(false);
-      setCardsClock(true);
+      setShowClocksCards(true);
     }
   }
   const transformer2=()=>{
@@ -89,10 +89,10 @@ export default function Websites(){
       balance: parsedBalance,
       number:50
     });
-}else{
-       toast.error("رجاءً أدخل رقم صالح للرصيد!");
-      return;
-    }
+}else if (!Balance || isNaN(parsedBalance)) {
+  toast.error("أدخل رقمًا صحيحًا");
+  return;
+}
   }else if(Balanced > 0){
     const question= prompt('Y | Nهل تريد اضافة رصيد جديد الى محفظتك؟');
     if(question === 'Y'){
@@ -165,7 +165,7 @@ export default function Websites(){
     setShow(true);
     setShowCardsWatches(false);
     setCardsPhone(false);
-    setCardsClock(false);
+    setShowClocksCards(false);
   }
   
   const search=()=>{
@@ -181,17 +181,17 @@ export default function Websites(){
         
         if(includeKeyWords(clockKeywords)){
           setShow(false);
-          setCardsClock(true);
+          setShowClocksCards(true);
           setShowCardsWatches(false);
           setCardsPhone(false);
        }else if(includeKeyWords(shoesKeywords)){
         setShow(false);
-        setCardsClock(false);
+        setShowClocksCards(false);
         setShowCardsWatches(true);
         setCardsPhone(false);
        }else if(includeKeyWords(phoneKeywords)){
         setShow(false);
-        setCardsClock(false);
+        setShowClocksCards(false);
         setShowCardsWatches(false);
         setCardsPhone(true);
       }else{
@@ -251,7 +251,7 @@ const logout=()=>{
           <input type={state} value={Password} onChange={e=>setPassword(e.target.value)} placeholder='كلمة السر'/>
           <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`} onClick={togglePassword}></i>
           </div>
-          <button onClick={enters}>تسجيل الدخول</button>
+          <button onClick={enters} >تسجيل الدخول</button>
           <a href="">هل نسيت كلمة المرور</a>
           </div>
           <button onClick={fetchBalance} className={style.buttonUpdate}>🔄 تحديث الرصيد</button>
@@ -284,7 +284,7 @@ const logout=()=>{
         </section>
         <hr className={style.hr}/>
         <section className={style.sec2} id='card'>
-{cardsClock &&<div className={style.contentCardsWatches} id='cards'>
+{showClocksCards &&<div className={style.contentCardsWatches} id='cards'>
             <h3 className={style.sectionTitle}>اجود الماركات العالمية </h3>
             <div className={style.cardsContainer}>
               {Buy && <a href="/cart" className={style.cart_icon}>
@@ -292,9 +292,9 @@ const logout=()=>{
               <span className={style.span1}>$الرصيد المتبقي: {Balanced}</span>
               <span className={style.span2}>عدد المنتجات: {count}</span>
               </a>}
-            {CardsClock.map((CardsClock,index)=>(
+            {clocksCardsData .map((clocksCardsData ,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={CardsClock.img} alt="" />
+              <Image className={style.img} src={`/${clocksCardsData .img}`} alt="" />
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -314,7 +314,7 @@ const logout=()=>{
               </a>}
             {CardsWatches.map((CardsWatches,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={CardsWatches.img} alt="" />
+              <Image className={style.img} src={`/${CardsWatches.img}`} alt="" />
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -336,7 +336,7 @@ const logout=()=>{
               </a>}
             {cardsPhone.map((cardsPhone,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={cardsPhone.img} alt="" />
+              <Image className={style.img} src={`/${cardsPhone.img}`} alt="" />
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
