@@ -42,19 +42,9 @@
        margin-bottom: 10px;
    }
    
-   .contentEnter input {
-       margin: 7px;
-       padding: 10px;
-       font-size: 17px;
-       font-weight: 400;
-       width: 340px;
-       height: 60px;
-       border-radius: 10px;
-       border: 1px solid #e0bcbc;
-   }
-   
-   .password {
-       width: 350px;
+   .password,
+   .Gmail {
+       width: 360px;
        height: 57px;
        align-items: center;
        justify-content: center;
@@ -65,10 +55,19 @@
        background-color: #d7c6c600;
    }
    
-   .password input {
+   .password input,
+   .Gmail input {
        width: 360px;
        height: 100%;
        display: flex;
+       margin: 7px;
+       padding: 10px;
+       font-size: 17px;
+       font-weight: 400;
+       width: 350px;
+       height: 57px;
+       border-radius: 10px;
+       border: 1px solid #e0bcbc;
    }
    
    .password i {
@@ -568,7 +567,8 @@
            border-radius: 10px;
            border: 1px solid #e0bcbc;
        }
-       .password {
+       .password,
+       .Gmail {
            width: 350px;
            height: 57px;
            align-items: center;
@@ -579,7 +579,8 @@
            border-radius: 10px;
            background-color: #d7c6c600;
        }
-       .password input {
+       .password input,
+       .Gmail input {
            width: 280px;
            height: 100%;
            display: flex;
@@ -1050,7 +1051,8 @@
            border-radius: 10px;
            border: 1px solid #e0bcbc;
        }
-       .password {
+       .password,
+       .Gmail {
            width: 350px;
            height: 57px;
            align-items: center;
@@ -1061,7 +1063,8 @@
            border-radius: 10px;
            background-color: #d7c6c600;
        }
-       .password input {
+       .password input,
+       .Gmail input {
            width: 280px;
            height: 100%;
            display: flex;
@@ -1537,7 +1540,8 @@
            border-radius: 10px;
            border: 1px solid #e0bcbc;
        }
-       .password {
+       .password,
+       .Gmail {
            width: 350px;
            height: 57px;
            align-items: center;
@@ -1548,7 +1552,8 @@
            border-radius: 10px;
            background-color: #d7c6c600;
        }
-       .password input {
+       .password input,
+       .Gmail input {
            width: 290px;
            height: 100%;
            display: flex;
@@ -2027,7 +2032,8 @@
            border-radius: 10px;
            border: 1px solid #e0bcbc;
        }
-       .password {
+       .password,
+       .Gmail {
            width: 350px;
            height: 57px;
            align-items: center;
@@ -2038,7 +2044,8 @@
            border-radius: 10px;
            background-color: #d7c6c600;
        }
-       .password input {
+       .password input,
+       .Gmail {
            width: 300px;
            height: 100%;
            display: flex;
