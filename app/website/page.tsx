@@ -12,21 +12,26 @@ import Image from "next/image";
 
 
 export default function Websites(){
-  const[gmail,setGmail]=useState('');
-  const[Password,setPassword]=useState('');
-  const[state,setState]=useState('password');
+  
+  const[gmail,setGmail]=useState<string>('');
+  const[Password,setPassword]=useState<string>('');
+  const[state,setState]=useState<'password' | 'text'>('password');
   const[showPassword,setShowPassword]=useState(false);
   const[enter,setEnter]=useState(true);
   const[inputValue,setInputValue]=useState("");
   const[show,setShow]=useState(true);
-  const[prise]=useState(140);
-  const[Balanced,setBalanced]=useState(0);
-  const[count,setCount]=useState(0);
+  const prise=140;
+  const[Balanced,setBalanced]=useState<number>(0);
+  const[count,setCount]=useState<number>(0);
   const[showClocksCards,setShowClocksCards]=useState(false);
   const[showCardsWatches,setShowCardsWatches]=useState(false);
   const[CardsPhone,setCardsPhone]=useState(false);
   const[Buy,setBuy]=useState(false);
-  const clocksCardsData =[
+  type Product={
+    id:string,
+    img:string
+  }
+  const clocksCardsData: Product[]=[
     {id:'chock1',img:"chock1.jpeg"},
     {id:'chock2',img:"chock2.jpeg"},
     {id:'chock3',img:"chock3.jpeg"},
@@ -34,7 +39,7 @@ export default function Websites(){
     {id:'chock5',img:"chock5.jpeg"},
     {id:'chock6',img:"chock6.jpeg"}
   ]
-  const CardsWatches=[
+  const CardsWatches: Product[]=[
     {id:'shos1',img:"shos1.jpg"},
     {id:'shos2',img:"shos2.png"},
     {id:'shos3',img:"shos3.jpeg"},
@@ -42,7 +47,7 @@ export default function Websites(){
     {id:'shos5',img:"shos5.jpeg"},
     {id:'shos6',img:"shos6.jpeg"}
   ]
-  const cardsPhone=[
+  const cardsPhone: Product[]=[
     {id:'phone2',img:"phone2.jpg"},
     {id:'phone3',img:"phone3.jpg"},
     {id:'phone4',img:"phone4.jpg"},
@@ -123,7 +128,7 @@ export default function Websites(){
   
   
   useEffect(()=>{
-    localStorage.setItem(gmail+'_Balance',Balanced);
+    localStorage.setItem(gmail+'_Balance',Balanced.toString());
   },[Balanced]);
 
   useEffect(()=>{
@@ -132,6 +137,10 @@ export default function Websites(){
   },[gmail]);
 
   const fetchBalance = () => {
+    if(!gmail){
+      toast.error('يجب تسجيل الدخول اولا!');
+      return;
+    }
   const balanceRef = ref(db, 'users/' + gmail.replace('.', '_') + '/wallet');
   get(balanceRef).then((snapshot) => {
     if (snapshot.exists()) {
@@ -176,20 +185,20 @@ export default function Websites(){
         const shoesKeywords = ['حذاء', 'الاحذية', 'احذية', 'الأحذية'];
         const phoneKeywords = ['جوال', 'جوالات', 'موبايل', 'الهاتف'];
 
-        const includeKeyWords=(keyWords)=>
+        const includeKeyWords=(keyWords:string[],keyword:string):boolean=>
           keyWords.some((word)=>keyword.includes(word));
         
-        if(includeKeyWords(clockKeywords)){
+        if(includeKeyWords(clockKeywords,keyword)){
           setShow(false);
           setShowClocksCards(true);
           setShowCardsWatches(false);
           setCardsPhone(false);
-       }else if(includeKeyWords(shoesKeywords)){
+       }else if(includeKeyWords(shoesKeywords,keyword)){
         setShow(false);
         setShowClocksCards(false);
         setShowCardsWatches(true);
         setCardsPhone(false);
-       }else if(includeKeyWords(phoneKeywords)){
+       }else if(includeKeyWords(phoneKeywords,keyword)){
         setShow(false);
         setShowClocksCards(false);
         setShowCardsWatches(false);
@@ -202,9 +211,10 @@ export default function Websites(){
 };
 
 const enters=()=>{
-  const isValidPassword=(Password)=>{
-    const has8Letters=(Password.match(/[a-zA-Z]/g) || []).length >= 8;
-    const has8Digits = (Password.match(/[0-9]/g) || []).length >= 8;
+  const isValidPassword=(password:string):boolean=>{
+    if(typeof password !== 'string') return false;
+    const has8Letters=(password.match(/[a-zA-Z]/g) || []).length >= 8;
+    const has8Digits = (password.match(/[0-9]/g) || []).length >= 8;
     return has8Letters && has8Digits;
   };
     /////
@@ -252,7 +262,7 @@ const logout=()=>{
             <h3>تسجيل الدخول في متجر النخبة</h3>
           <input type="text" value={gmail} onChange={e=>setGmail(e.target.value)} placeholder='البريد الالكتروني'/>
           <div className={style.password}>
-          <input type={state} value={Password} onChange={e=>setPassword(e.target.value)} placeholder='كلمة السر'/>
+          <input type={state} value={Password} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setPassword(e.target.value)} placeholder='كلمة السر'/>
           <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`} onClick={togglePassword}></i>
           </div>
           <button onClick={enters} >تسجيل الدخول</button>
@@ -296,9 +306,9 @@ const logout=()=>{
               <span className={style.span1}>$الرصيد المتبقي: {Balanced}</span>
               <span className={style.span2}>عدد المنتجات: {count}</span>
               </a>}
-            {clocksCardsData .map((clocksCardsData ,index)=>(
+            {clocksCardsData.map((clocksCards ,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={`/${clocksCardsData .img}`} alt="" width={400} height={400}/>
+              <Image className={style.img} src={`/${clocksCards .img}`} alt="" width={400} height={400}/>
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -316,9 +326,9 @@ const logout=()=>{
               <span className={style.span1}>$الرصيد المتبقي: {Balanced}</span>
               <span className={style.span2}>عدد المنتجات: {count}</span>
               </a>}
-            {CardsWatches.map((CardsWatches,index)=>(
+            {CardsWatches.map((CardWatche,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={`/${CardsWatches.img}`} alt="" width={400} height={400}/>
+              <Image className={style.img} src={`/${CardWatche.img}`} alt="" width={400} height={400}/>
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
@@ -338,9 +348,9 @@ const logout=()=>{
               <div className={style.span2}><span>عدد المنتجات: {count}</span></div>
               </div>
               </a>}
-            {cardsPhone.map((cardsPhone,index)=>(
+            {cardsPhone.map((cardPhone,index)=>(
               <div className={style.CardsWatches} key={index}>
-              <Image className={style.img} src={`/${cardsPhone.img}`} alt="" width={400} height={400}/>
+              <Image className={style.img} src={`/${cardPhone.img}`} alt="" width={400} height={400}/>
               <h3  className={style.h3}>Nike Air Max</h3>
               <p className={style.p}>${prise}</p>
               {Buy && <button className={style.cardButton} onClick={buy}>أضف إلى السلة</button>}
