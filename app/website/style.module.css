@@ -169,6 +169,9 @@
        height: 30px;
        padding: 10px;
        font-size: 17px;
+       font-weight: 600;
+       text-align: end;
+       color: #222;
    }
    
    .centerHead input:focus {

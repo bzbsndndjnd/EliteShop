@@ -269,7 +269,7 @@ const logout=()=>{
           </div>
           <div className={style.password}>
           <input type={state} value={Password} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setPassword(e.target.value)} placeholder='كلمة السر'/>
-          <i className={`fas ${showPassword ? 'fa-eye-slash' : 'fa-eye'}`} onClick={togglePassword}></i>
+          <i className={`fas ${showPassword ?'fa-eye':'fa-eye-slash'}`} onClick={togglePassword}></i>
           </div>
           <button onClick={enters} >تسجيل الدخول</button>
           <a href="">هل نسيت كلمة المرور</a>
