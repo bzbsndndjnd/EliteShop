@@ -82,8 +82,9 @@ export default function Websites(){
     toast.error("يجب تسجيل الدخول أولاً!");
     return;
   }
+  if(Balanced === 0){
   const Balance = prompt("ادخل رصيد محفظتك: ");
-  if(Balanced === 0 && Balance !== null){
+  if(Balance !== null){
     const parsedBalance = parseFloat(Balance);
     if(!isNaN(parsedBalance) && isFinite(parsedBalance)){
     setBalanced(parsedBalance);
@@ -98,10 +99,12 @@ export default function Websites(){
   toast.error("أدخل رقمًا صحيحًا");
   return;
 }
+  }
   }else if(Balanced > 0){
     const question= prompt('Y | Nهل تريد اضافة رصيد جديد الى محفظتك؟');
+    if(question === 'Y'){
     const updateBalanced = prompt(' كم المبلغ الذي تريد اضافته؟');
-    if(question === 'Y' && updateBalanced !== null){
+      if(updateBalanced !== null){
       const updateBalancedFloat = parseFloat(updateBalanced);
       const phone=parseInt(prompt("ادخل رقم جوالك") || '0');
       if(!isNaN(updateBalancedFloat) && isFinite(updateBalancedFloat)){
@@ -116,14 +119,15 @@ export default function Websites(){
        toast.error("رجاءً أدخل رقم صالح للرصيد!");
       return;
     }
+  }
     }else{
       setBuy(true);
       toast.error('ولا يهمك المحفظة بتستنى منك اشارة!');
     }
 
     ///////////
-    }
   }
+}
 
   
   
@@ -274,7 +278,7 @@ const logout=()=>{
           </div>}
         <header className={style.head}>
             <div className={style.leftHead}>
-              <a className={style.icon1}><i className="fas fa-user"></i></a>
+              <a href='/profile' className={style.icon1}><i className="fas fa-user"></i></a>
               <a className={style.icon1} onClick={Counter} href='#'><i className="fas fa-shopping-cart"></i></a>
               <a className={style.icon1}><i className="fas fa-search"></i></a>
               </div>
@@ -285,9 +289,9 @@ const logout=()=>{
             </div>
             </div>
             <div className={style.rightHead}>
-              <a className={style.icon1}><i className="fab fa-instagram"></i></a>
-              <a className={style.icon1}><i className="fab fa-twitter"></i></a>
-              <a className={style.icon1}><i className="fab fa-facebook"></i></a>
+              <a href="https://www.instagram.com" target="_blank" className={style.icon1}><i className="fab fa-instagram"></i></a>
+              <a href="https://twitter.com" target="_blank" className={style.icon1}><i className="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" target="_blank" className={style.icon1}><i className="fab fa-facebook"></i></a>
             </div>
         </header>
         <section className={style.sec1}>
