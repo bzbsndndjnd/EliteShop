@@ -95,10 +95,10 @@ export default function Websites(){
 }
   }else if(Balanced > 0){
     const question= prompt('Y | Nهل تريد اضافة رصيد جديد الى محفظتك؟');
-    if(question === 'Y'){
-      const updateBalanced = prompt(' كم المبلغ الذي تريد اضافته؟');
+    const updateBalanced = prompt(' كم المبلغ الذي تريد اضافته؟');
+    if(question === 'Y' && updateBalanced !== null){
       const updateBalancedFloat = parseFloat(updateBalanced);
-      const phone=parseInt(prompt("ادخل رقم جوالك"));
+      const phone=parseInt(prompt("ادخل رقم جوالك") || '0');
       if(!isNaN(updateBalancedFloat) && isFinite(updateBalancedFloat)){
     setBalanced(Balanced+updateBalancedFloat);
     setBuy(true);
@@ -224,6 +224,10 @@ const enters=()=>{
 }
 
 const logout=()=>{
+  localStorage.removeItem(gmail + '_Balance');
+  setGmail('');
+  setPassword('');
+  setBalanced(0); 
   setEnter(true);
 }
 
