@@ -265,7 +265,7 @@ const logout=()=>{
           <div className={style.contentEnter}>
             <h3>تسجيل الدخول في متجر النخبة</h3>
             <div className={style.Gmail}>
-          <input type="text" value={gmail} onChange={e=>setGmail(e.target.value)} placeholder='البريد الالكتروني او رقم الهاتف'/>
+          <input type="text" value={gmail} onChange={e=>setGmail(e.target.value)} placeholder='البريد الالكتروني'/>
           </div>
           <div className={style.password}>
           <input type={state} value={Password} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>setPassword(e.target.value)} placeholder='كلمة السر'/>
