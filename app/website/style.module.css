@@ -428,8 +428,8 @@
        position: relative;
        display: flex;
        height: 100px;
-       margin-top: -220px;
-       margin-left: -60px;
+       margin-top: -200px;
+       margin-left: -50px;
        align-items: center;
        justify-content: center;
        display: flex;
@@ -442,8 +442,8 @@
        position: relative;
        display: flex;
        height: 100px;
-       margin-top: -150px;
-       margin-left: -145px;
+       margin-top: -20px;
+       margin-left: -15px;
        align-items: center;
        justify-content: center;
        display: flex;
@@ -680,7 +680,8 @@
            width: 120px;
            height: 10px;
            padding: 10px;
-           font-size: 17px;
+           font-size: 15px;
+           font-weight: 500;
        }
        .centerHead input:focus {
            outline: none;
@@ -909,7 +910,7 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: 15px;
+           margin-top: -25px;
            margin-left: 28px;
            align-items: center;
            justify-content: center;
@@ -925,7 +926,7 @@
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: 70px;
+           margin-top: 30px;
            margin-left: 35px;
            position: absolute;
            align-items: center;
@@ -1392,7 +1393,7 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: 10px;
+           margin-top: -18px;
            margin-left: 28px;
            align-items: center;
            justify-content: center;
@@ -1408,8 +1409,8 @@
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: 80px;
-           margin-left: 35px;
+           margin-top: 15px;
+           margin-left: 42px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -1884,8 +1885,8 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: 15px;
-           margin-left: 37px;
+           margin-top: -25px;
+           margin-left: 38px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -1900,8 +1901,8 @@
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: 90px;
-           margin-left: 35px;
+           margin-top: 25px;
+           margin-left: 47px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -2383,8 +2384,8 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -110px;
-           margin-left: 270px;
+           margin-top: -80px;
+           margin-left: 60px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2400,7 +2401,7 @@
            height: 40px;
            width: 140px;
            margin-top: -20px;
-           margin-left: 305px;
+           margin-left: 100px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -2625,8 +2626,8 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -127px;
-           margin-left: -240px;
+           margin-top: -85px;
+           margin-left: 80px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2641,8 +2642,8 @@
            display: flex;
            height: 40px;
            width: 140px;
-           margin-top: -12px;
-           margin-left: -200px;
+           margin-top: -20px;
+           margin-left: 90px;
            position: absolute;
            align-items: center;
            justify-content: center;
