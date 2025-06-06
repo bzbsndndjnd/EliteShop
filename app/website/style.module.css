@@ -419,6 +419,7 @@
        width: 30%;
        height: 70%;
        display: flex;
+       margin-right: 120px;
    }
    
    .cart_icon .span1 {
@@ -428,8 +429,8 @@
        position: relative;
        display: flex;
        height: 100px;
-       margin-top: -200px;
-       margin-left: -50px;
+       margin-top: -290px;
+       margin-left: -180px;
        align-items: center;
        justify-content: center;
        display: flex;
@@ -442,8 +443,8 @@
        position: relative;
        display: flex;
        height: 100px;
-       margin-top: -20px;
-       margin-left: -15px;
+       margin-top: -130px;
+       margin-left: -145px;
        align-items: center;
        justify-content: center;
        display: flex;
@@ -910,8 +911,8 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -18px;
-           margin-left: 45px;
+           margin-top: -15px;
+           margin-left: -75px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -927,7 +928,7 @@
            height: 40px;
            width: 140px;
            margin-top: 30px;
-           margin-left: 35px;
+           margin-left: -82px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -1394,7 +1395,7 @@
            display: flex;
            height: 40px;
            margin-top: -18px;
-           margin-left: 28px;
+           margin-left: -92px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -1410,7 +1411,7 @@
            height: 40px;
            width: 140px;
            margin-top: 15px;
-           margin-left: 42px;
+           margin-left: -78px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -1886,7 +1887,7 @@
            display: flex;
            height: 40px;
            margin-top: -15px;
-           margin-left: 48px;
+           margin-left: -70px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -1902,7 +1903,7 @@
            height: 40px;
            width: 140px;
            margin-top: 25px;
-           margin-left: 47px;
+           margin-left: -78px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -2385,7 +2386,7 @@
            display: flex;
            height: 40px;
            margin-top: -80px;
-           margin-left: 60px;
+           margin-left: -60px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2401,7 +2402,7 @@
            height: 40px;
            width: 140px;
            margin-top: -20px;
-           margin-left: 100px;
+           margin-left: -20px;
            position: absolute;
            align-items: center;
            justify-content: center;
@@ -2626,8 +2627,8 @@
            position: relative;
            display: flex;
            height: 40px;
-           margin-top: -85px;
-           margin-left: 80px;
+           margin-top: -120px;
+           margin-left: -210px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2643,7 +2644,7 @@
            height: 40px;
            width: 140px;
            margin-top: -20px;
-           margin-left: 90px;
+           margin-left: -195px;
            position: absolute;
            align-items: center;
            justify-content: center;
