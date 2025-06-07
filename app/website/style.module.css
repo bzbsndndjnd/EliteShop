@@ -273,7 +273,8 @@
    
    .sec2 {
        width: 100%;
-       height: 130vh;
+       min-height: 100vh;
+       height: auto;
        background-color: #333333b8;
        z-index: 1;
        position: relative;
@@ -455,6 +456,7 @@
        align-items: center;
        justify-content: center;
        display: flex;
+       margin-bottom: 10px;
    }
    
    .logout {
@@ -771,7 +773,8 @@
        }
        .sec2 {
            width: 100%;
-           height: 175vh;
+           min-height: 100vh;
+           height: auto;
            background-color: #333333b8;
            z-index: 1;
            position: relative;
@@ -966,6 +969,7 @@
        .return button {
            width: 150px;
            height: 40px;
+           margin-bottom: 10px;
            color: #fff;
            font-size: 17px;
            font-weight: 400;
@@ -1254,7 +1258,8 @@
        }
        .sec2 {
            width: 100%;
-           height: 175vh;
+           min-height: 100vh;
+           height: auto;
            background-color: #333333b8;
            z-index: 1;
            position: relative;
@@ -1457,6 +1462,7 @@
            background-color: #2222229e;
            transition: 0.5s ease;
            cursor: pointer;
+           margin-bottom: 10px;
        }
        .return button:hover {
            opacity: 0.7;
@@ -1745,7 +1751,8 @@
        }
        .sec2 {
            width: 100%;
-           height: 175vh;
+           min-height: 100vh;
+           height: auto;
            background-color: #333333b8;
            z-index: 1;
            position: relative;
@@ -1941,6 +1948,7 @@
        .return button {
            width: 160px;
            height: 45px;
+           margin-bottom: 10px;
            color: #fff;
            font-size: 18px;
            font-weight: 500;
@@ -2243,7 +2251,8 @@
        }
        .sec2 {
            width: 100%;
-           height: 175vh;
+           min-height: 100vh;
+           height: auto;
            background-color: #333333b8;
            z-index: 1;
            position: relative;
@@ -2410,6 +2419,7 @@
        }
        .return {
            width: 100%;
+           margin-bottom: 10px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2483,7 +2493,8 @@
    @media(min-width:769px) and (max-width:1024px) {
        .sec2 {
            width: 100%;
-           height: 135vh;
+           min-height: 100vh;
+           height: auto;
            background-color: #333333b8;
            z-index: 1;
            position: relative;
@@ -2628,7 +2639,7 @@
            display: flex;
            height: 40px;
            margin-top: -120px;
-           margin-left: -210px;
+           margin-left: -240px;
            align-items: center;
            justify-content: center;
            display: flex;
@@ -2655,7 +2666,7 @@
            align-items: center;
            justify-content: center;
            display: flex;
-           margin-top: 30px;
+           margin-bottom: 10px;
        }
        .logout {
            width: 100%;
