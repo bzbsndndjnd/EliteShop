@@ -308,9 +308,13 @@ const logout=()=>{
             <h3 className={style.sectionTitle}>اجود الماركات العالمية </h3>
             <div className={style.cardsContainer}>
               {Buy && <a href="/cart" className={style.cart_icon}>
-              <i className="fas fa-shopping-cart"></i>
-              <span className={style.span1}>$الرصيد المتبقي: {Balanced}</span>
-              <span className={style.span2}>عدد المنتجات: {count}</span>
+              <div className={style.cart_icon}>
+  <i className="fas fa-shopping-cart"></i>
+  <div className={style.cart_texts}>
+  <span className={style.span1}>الرصيد المتبقي: ${Balanced}</span>
+  <span className={style.span2}>عدد المنتجات: {count}</span>
+  </div>
+</div>
               </a>}
             {clocksCardsData.map((clocksCards ,index)=>(
               <div className={style.CardsWatches} key={index}>
@@ -328,9 +332,13 @@ const logout=()=>{
             <h3 className={style.sectionTitle}>اجود الماركات العالمية </h3>
             <div className={style.cardsContainer}>
               {Buy && <a href="/cart" className={style.cart_icon}>
-              <i className="fas fa-shopping-cart"></i>
-              <span className={style.span1}>$الرصيد المتبقي: {Balanced}</span>
-              <span className={style.span2}>عدد المنتجات: {count}</span>
+              <div className={style.cart_icon}>
+  <i className="fas fa-shopping-cart"></i>
+  <div className={style.cart_texts}>
+  <span className={style.span1}>الرصيد المتبقي: ${Balanced}</span>
+  <span className={style.span2}>عدد المنتجات: {count}</span>
+  </div>
+</div>
               </a>}
             {CardsWatches.map((CardWatche,index)=>(
               <div className={style.CardsWatches} key={index}>
@@ -348,11 +356,13 @@ const logout=()=>{
             <h3 className={style.sectionTitle}>اجود الماركات العالمية للاحذية</h3>
             <div className={style.cardsContainer}>
               {Buy && <a href="/cart" className={style.cart_icon}>
-              <i className="fas fa-shopping-cart"></i>
-              <div className={style.sp}>
-              <div className={style.span1}><span>$الرصيد المتبقي: {Balanced}</span></div>
-              <div className={style.span2}><span>عدد المنتجات: {count}</span></div>
-              </div>
+              <div className={style.cart_icon}>
+  <i className="fas fa-shopping-cart"></i>
+  <div className={style.cart_texts}>
+  <span className={style.span1}>الرصيد المتبقي: ${Balanced}</span>
+  <span className={style.span2}>عدد المنتجات: {count}</span>
+  </div>
+</div>
               </a>}
             {cardsPhone.map((cardPhone,index)=>(
               <div className={style.CardsWatches} key={index}>
