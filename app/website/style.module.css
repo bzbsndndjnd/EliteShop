@@ -1,2656 +1,2656 @@
-   .enter {
-       width: 100%;
-       height: 100%;
-       position: fixed;
-       z-index: 222;
-       background-color: #222222ab;
-       color: #fff;
-       align-items: center;
-       padding-top: 70px;
-       display: flex;
-       flex-direction: column;
-   }
-   
-   .enter h3 {
-       font-size: 2.5em;
-       font-weight: 700;
-       color: #aeaeb9;
-       margin-bottom: 10px;
-   }
-   
-   .enter input {
-       width: 270px;
-       height: 40px;
-   }
-   
-   .contentEnter {
-       flex-direction: column;
-       display: flex;
-       width: 380px;
-       height: 330px;
-       background-color: #f1e7e7;
-       align-items: center;
-       display: flex;
-       border-radius: 10px;
-   }
-   
-   .contentEnter h3 {
-       font-size: 1.7em;
-       font-weight: 500;
-       color: #222;
-       margin-top: 20px;
-       margin-bottom: 20px;
-   }
-   
-   .password,
-   .Gmail {
-       width: 360px;
-       height: 57px;
-       align-items: center;
-       justify-content: center;
-       display: flex;
-       color: #222;
-       margin-bottom: 10px;
-       border-radius: 10px;
-       background-color: #d7c6c600;
-   }
-   
-   .password input,
-   .Gmail input {
-       width: 360px;
-       height: 100%;
-       display: flex;
-       margin: 7px;
-       padding: 10px;
-       font-size: 17px;
-       font-weight: 400;
-       width: 350px;
-       height: 57px;
-       border-radius: 10px;
-       border: 1px solid #e0bcbc;
-   }
-   
-   .password i {
-       margin-left: 300px;
-       position: fixed;
-       cursor: pointer;
-       display: flex;
-       font-size: 1.2em;
-   }
-   
-   .password i:hover {
-       opacity: 0.8;
-   }
-   
-   .contentEnter button {
-       width: 340px;
-       height: 55px;
-       background-color: #0000ffbf;
-       border-radius: 10px;
-       color: #fff;
-       font-size: 1.3em;
-       font-weight: 700;
-       border: none;
-       cursor: pointer;
-   }
-   
-   .contentEnter button:hover {
-       opacity: 0.8;
-   }
-   
-   .buttonUpdate {
-       width: 140px;
-       height: 40px;
-       background-color: #544545;
-       align-items: center;
-       justify-content: center;
-       display: flex;
-       margin-top: 10px;
-       color: #fff;
-       font-size: 20px;
-       font-weight: 300;
-       border-radius: 10px;
-       border: none;
-       cursor: pointer;
-   }
-   
-   .buttonUpdate:hover {
-       opacity: 0.7;
-   }
-   
-   .contentEnter a {
-       margin-top: 10px;
-       font-size: 18px;
-       font-weight: 400;
-       color: #1515a1e0;
-   }
-   
-   .head {
-       width: 100%;
-       height: 65px;
-       padding: 10px;
-       align-items: center;
-       justify-content: space-between;
-       display: flex;
-       background-color: #f0f0f0;
-       z-index: 22;
-       position: fixed;
-   }
-   
-   .leftHead,
-   .rightHead {
-       align-items: center;
-       justify-content: space-between;
-       display: flex;
-   }
-   
-   .icon1 {
-       margin-left: 30px;
-       font-size: 1.4em;
-       font-weight: 400;
-       cursor: pointer;
-   }
-   
-   .centerHead {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       flex: 1;
-       gap: 10px;
-   }
-   
-   .centerHead h1 {
-       font-size: 2em;
-       font-weight: 700;
-   }
-   
-   .centerHead input {
-       width: 230px;
-       height: 30px;
-       padding: 10px;
-       font-size: 17px;
-       font-weight: 600;
-       text-align: end;
-       color: #222;
-   }
-   
-   .centerHead input:focus {
-       outline: none;
-       border: 2px solid #333;
-       background-color: #fff;
-   }
-   
-   .centerHead button {
-       width: 40px;
-       height: 30px;
-       background-color: #333;
-       color: #fff;
-       font-size: 17px;
-       font-weight: 400;
-       cursor: pointer;
-   }
-   
-   .centerHead button:hover {
-       background-color: #555;
-   }
-   
-   .sec1 {
-       width: 100%;
-       height: 100vh;
-       position: relative;
-       overflow: hidden;
-   }
-   
-   .sec1 .img {
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-       z-index: 1;
-   }
-   
-   .sec1 .overlay {
-       position: absolute;
-       display: flex;
-       z-index: 2;
-       width: 100%;
-       height: 100%;
-   }
-   
-   .sec1 .h1 {
-       color: #fff;
-       font-size: 3.3em;
-       font-weight: 500;
-       position: absolute;
-       z-index: 2;
-       padding: 100px 0 0 100px;
-       display: flex;
-   }
-   
-   .sec1 .p {
-       position: absolute;
-       padding: 250px 0 0 100px;
-       z-index: 2;
-       color: #d1afaf;
-       font-size: 30px;
-       font-weight: 300;
-   }
-   
-   .sec1 .a {
-       position: absolute;
-       margin: 350px 0 0 100px;
-       z-index: 2;
-       color: #d1afaf;
-       width: 110px;
-       height: 40px;
-       border-radius: 10px;
-       background-color: #3d3d43;
-       border: none;
-       color: #fff;
-       transition: 0.6s ease;
-       cursor: pointer;
-       align-items: center;
-       justify-content: center;
-       display: flex;
-   }
-   
-   .sec1 .a:hover {
-       transform: scale(1.1);
-       opacity: 2;
-   }
-   
-   .sec1 .a span {
-       font-size: 18px;
-       font-weight: 300;
-   }
-   
-   .hr {
-       height: 4px;
-       width: 100%;
-       background-color: #d3b2b2;
-   }
-   
-   .sec2 {
-       width: 100%;
-       min-height: 100vh;
-       height: auto;
-       background-color: #333333b8;
-       z-index: 1;
-       position: relative;
-       display: flex;
-       justify-content: center;
-   }
-   
-   .sec2 .content {
-       width: 1050px;
-       min-height: 80vh;
-       height: auto;
-       justify-content: center;
-       flex-wrap: wrap;
-       display: flex;
-   }
-   
-   .content .card {
-       width: 240px;
-       height: 60vh;
-       margin: 150px 55px 0 0;
-       background-color: #ffffffa3;
-       border-radius: 10px;
-       box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
-       cursor: pointer;
-   }
-   
-   .content .card .img {
-       width: 100%;
-       height: 150px;
-       border-radius: 10px 10px 0 0;
-   }
-   
-   .content .card .info {
-       align-items: center;
-       justify-content: center;
-       display: flex;
-       width: 100%;
-       flex-direction: column;
-   }
-   
-   .content .card .info .h3 {
-       font-size: 2em;
-       font-weight: 700;
-   }
-   
-   .content .card .info .p {
-       font-size: 20px;
-       font-weight: 500;
-       margin: 25px;
-       text-align: center;
-       line-height: 1.6;
-       margin: 15px 20px;
-   }
-   
-   .content .card .info .a {
-       width: 100px;
-       height: 40px;
-       background-color: #222;
-       align-items: center;
-       justify-content: center;
-       display: flex;
-       border-radius: 10px;
-       color: #fff;
-       transition: 0.7s ease;
-   }
-   
-   .content .card .info .a:hover {
-       transform: scale(1.06);
-       opacity: 0.8;
-   }
-   
-   .sec2 .cardsContainer {
-       width: 1050px;
-       height: 110vh;
-       justify-content: center;
-       align-items: center;
-       flex-wrap: wrap;
-       flex-direction: column;
-       display: flex;
-       margin-top: 20px;
-       text-align: center;
-   }
-   
-   .contentCardsWatches .sectionTitle {
-       width: 100%;
-       text-align: center;
-       margin-top: 20px;
-       color: #f9dfdf;
-       font-size: 2em;
-       letter-spacing: 1px;
-   }
-   
-   .CardsWatches {
-       width: 250px;
-       height: 270px;
-       background-color: #222;
-       margin: 10px;
-       text-align: center;
-       border-radius: 10px;
-       color: #fff;
-   }
-   
-   .cardsContainer .img {
-       width: 100%;
-       height: 150px;
-       border-radius: 10px 10px 0 0;
-   }
-   
-   .cardsContainer .h3 {
-       font-size: 20px;
-       font-weight: 500;
-       letter-spacing: 3px;
-       margin: 10px;
-   }
-   
-   .cardsContainer .cardButton {
-       width: 100px;
-       height: 30px;
-       margin-top: 15px;
-       border-radius: 10px;
-       border: none;
-       cursor: pointer;
-       background-color: #ddcbcb;
-       font-size: 18px;
-       font-weight: 400;
-       transition: 0.5s ease;
-   }
-   
-   .cardsContainer .cardButton:hover {
-       opacity: 0.7;
-       transform: scale(1.06);
-   }
-   
-   .cart_icon {
-       position: relative;
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       height: 80%;
-   }
-   
-   .cart_icon i {
-       font-size: 15em;
-       color: #fff;
-       z-index: 1;
-   }
-   
-   .cart_texts {
-       position: absolute;
-       top: 40%;
-       left: 50%;
-       transform: translate(-50%, -50%);
-       text-align: center;
-       z-index: 2;
-   }
-   
-   .span1,
-   .span2 {
-       font-size: 1.5em;
-       font-weight: 700;
-       color: #222;
-       display: block;
-       margin: 10px 0;
-   }
-   
-   .return {
-       width: 100%;
-       align-items: center;
-       justify-content: center;
-       display: flex;
-   }
-   
-   .logout {
-       width: 100%;
-       align-items: center;
-       justify-content: center;
-       display: flex;
-       margin: 120px 30px 10px 0;
-   }
-   
-   .logout button {
-       width: 140px;
-       height: 50px;
-       border-radius: 10px;
-       border: none;
-       background-color: #222;
-       color: #fff;
-       font-size: 18px;
-       font-weight: 400px;
-       cursor: pointer;
-   }
-   
-   .logout button:hover {
-       opacity: 0.8;
-   }
-   
-   .return button {
-       width: 150px;
-       height: 40px;
-       color: #fff;
-       font-size: 17px;
-       font-weight: 400;
-       border-radius: 10px;
-       border: none;
-       background-color: #2222229e;
-       transition: 0.5s ease;
-       cursor: pointer;
-       margin-bottom: 10px;
-   }
-   
-   .return button:hover {
-       opacity: 0.7;
-       transform: scale(1.06);
-   }
-   
-   .footer {
-       width: 100%;
-       height: 80px;
-       background-color: #222222f2;
-       color: #fff;
-       padding: 20px;
-       justify-content: space-between;
-       display: flex;
-   }
-   
-   .footer .p1 {
-       font-size: 18px;
-       font-weight: 300;
-       margin-top: 10px;
-       margin-left: 25px;
-   }
-   
-   .footer .p2 {
-       font-size: 18px;
-       font-weight: 300;
-   }
-   
-   @media(max-width:360px) {
-       .enter {
-           width: 100%;
-           height: 100%;
-           position: fixed;
-           z-index: 222;
-           background-color: #222222ab;
-           color: #fff;
-           align-items: center;
-           padding-top: 110px;
-           display: flex;
-           flex-direction: column;
-       }
-       .enter h3 {
-           font-size: 1.7em;
-           font-weight: 600;
-           color: #aeaeb9;
-           margin-bottom: 10px;
-       }
-       .enter input {
-           width: 200px;
-           height: 40px;
-       }
-       .contentEnter {
-           flex-direction: column;
-           display: flex;
-           width: 300px;
-           height: 290px;
-           background-color: #f1e7e7;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-       }
-       .contentEnter h3 {
-           font-size: 17px;
-           font-weight: 600;
-           color: #222;
-           margin-bottom: 10px;
-       }
-       .contentEnter input {
-           margin: 7px;
-           padding: 2px;
-           font-size: 15px;
-           font-weight: 400;
-           width: 280px;
-           height: 60px;
-           border-radius: 10px;
-           border: 1px solid #e0bcbc;
-           text-align: end;
-       }
-       .password,
-       .Gmail {
-           width: 350px;
-           height: 57px;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           color: #222;
-           margin-bottom: 7px;
-           border-radius: 10px;
-           background-color: #d7c6c600;
-       }
-       .Gmail input,
-       .password input {
-           width: 280px;
-           height: 100%;
-           display: flex;
-           padding: 10px;
-           text-align: left;
-       }
-       .password i {
-           margin-left: 240px;
-           position: fixed;
-           cursor: pointer;
-           display: flex;
-           font-size: 1.2em;
-       }
-       .password i:hover {
-           opacity: 0.8;
-       }
-       .contentEnter button {
-           width: 280px;
-           height: 45px;
-           background-color: #0000ffbf;
-           border-radius: 10px;
-           color: #fff;
-           font-size: 1.3em;
-           font-weight: 700;
-           border: none;
-           cursor: pointer;
-       }
-       .contentEnter button:hover {
-           opacity: 0.8;
-       }
-       .buttonUpdate {
-           width: 120px;
-           height: 35px;
-           background-color: #544545;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 10px;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 700;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-       }
-       .buttonUpdate:hover {
-           opacity: 0.7;
-       }
-       .contentEnter a {
-           margin-top: 10px;
-           font-size: 18px;
-           font-weight: 400;
-           color: #1515a1e0;
-       }
-       .head {
-           width: 100%;
-           height: 65px;
-           padding: 5px;
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-           background-color: #f0f0f0;
-           z-index: 22;
-           position: fixed;
-       }
-       .leftHead,
-       .rightHead {
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-       }
-       .icon1 {
-           margin-left: 7px;
-           font-size: 1.2em;
-           font-weight: 400;
-           cursor: pointer;
-       }
-       .centerHead {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex-direction: column;
-           margin-left: 3px;
-           flex: 1;
-           gap: 10px;
-       }
-       .centerHead h1 {
-           margin-top: 5px;
-           font-size: 1.2em;
-           font-weight: 700;
-       }
-       .centerHead input {
-           width: 120px;
-           height: 10px;
-           padding: 10px;
-           font-size: 15px;
-           font-weight: 500;
-       }
-       .centerHead input:focus {
-           outline: none;
-           border: 2px solid #333;
-           background-color: #fff;
-       }
-       .centerHead button {
-           width: 25px;
-           height: 25px;
-           background-color: #333;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 400;
-           cursor: pointer;
-       }
-       .centerHead button:hover {
-           background-color: #555;
-       }
-       .sec1 {
-           width: 100%;
-           height: 100vh;
-           position: relative;
-           overflow: hidden;
-       }
-       .sec1 .img {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           z-index: 1;
-       }
-       .sec1 .overlay {
-           position: absolute;
-           display: flex;
-           z-index: 2;
-           width: 100%;
-           height: 100%;
-       }
-       .sec1 .h1 {
-           color: #fff;
-           font-size: 2em;
-           font-weight: 500;
-           position: absolute;
-           z-index: 2;
-           padding: 150px 0 0 100px;
-           display: flex;
-       }
-       .sec1 .p {
-           position: absolute;
-           padding: 250px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           font-size: 1.5em;
-           font-weight: 500;
-       }
-       .sec1 .a {
-           position: absolute;
-           margin: 350px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           width: 90px;
-           height: 35px;
-           border-radius: 10px;
-           background-color: #3d3d43;
-           border: none;
-           color: #fff;
-           transition: 0.6s ease;
-           cursor: pointer;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-       }
-       .sec1 .a:hover {
-           transform: scale(1.1);
-           opacity: 2;
-       }
-       .sec1 .a span {
-           font-size: 16px;
-           font-weight: 300;
-       }
-       .hr {
-           height: 4px;
-           width: 100%;
-           background-color: #d3b2b2;
-       }
-       .sec2 {
-           width: 100%;
-           min-height: 100vh;
-           height: auto;
-           background-color: #333333b8;
-           z-index: 1;
-           position: relative;
-           display: flex;
-           justify-content: center;
-       }
-       .sec2 .content {
-           width: 1050px;
-           min-height: 80vh;
-           height: auto;
-           justify-content: center;
-           flex-wrap: wrap;
-           display: flex;
-       }
-       .content .card {
-           width: 105px;
-           height: 67vh;
-           margin: 8px;
-           background-color: #ffffffa3;
-           border-radius: 10px;
-           box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
-           cursor: pointer;
-       }
-       .content .card .img {
-           width: 100%;
-           height: 120px;
-           border-radius: 10px 10px 0 0;
-       }
-       .content .card .info {
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           width: 100%;
-           flex-direction: column;
-       }
-       .content .card .info .h3 {
-           font-size: 1.7em;
-           font-weight: 700;
-       }
-       .content .card .info .p {
-           font-size: 17px;
-           font-weight: 600;
-           margin: 20px;
-           text-align: center;
-           line-height: 1.6;
-           margin: 7px 20px;
-       }
-       .content .card .info .a {
-           width: 70px;
-           height: 40px;
-           background-color: #222;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-           color: #fff;
-           transition: 0.7s ease;
-       }
-       .content .card .info .a:hover {
-           transform: scale(1.06);
-           opacity: 0.8;
-       }
-       .sec2 .cardsContainer {
-           width: 230px;
-           height: 130vh;
-           justify-content: center;
-           align-items: center;
-           flex-wrap: wrap;
-           flex-direction: column;
-           display: flex;
-           margin-top: 1px;
-           text-align: center;
-       }
-       .contentCardsWatches .sectionTitle {
-           width: 100%;
-           text-align: center;
-           margin-top: 20px;
-           color: #f9dfdf;
-           font-size: 1.4em;
-           letter-spacing: 1px;
-       }
-       .CardsWatches {
-           width: 100px;
-           height: 235px;
-           background-color: #222;
-           margin: 5px;
-           text-align: center;
-           border-radius: 10px;
-           color: #fff;
-       }
-       .cardsContainer .img {
-           width: 100%;
-           height: 110px;
-           border-radius: 10px 10px 0 0;
-       }
-       .cardsContainer .h3 {
-           font-size: 16px;
-           font-weight: 500;
-           letter-spacing: 3px;
-           margin: 10px;
-       }
-       .cardsContainer .cardButton {
-           width: 90px;
-           height: 25px;
-           margin-top: 15px;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-           background-color: #ddcbcb;
-           font-size: 16px;
-           font-weight: 400;
-           transition: 0.5s ease;
-       }
-       .cardsContainer .cardButton:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .cart_icon {
-           top: 29%;
-           left: 9%;
-           position: absolute;
-           display: flex;
-       }
-       .cart_icon i {
-           font-size: 13.5em;
-           color: #fff;
-           z-index: 1;
-           margin-top: 10px;
-       }
-       .cart_texts {
-           position: absolute;
-           top: 45%;
-           left: 56%;
-           transform: translate(-50%, -50%);
-           text-align: center;
-           z-index: 2;
-           width: 150px;
-       }
-       .span1,
-       .span2 {
-           font-size: 1.2em;
-           font-weight: 600;
-           color: #222;
-           display: block;
-           margin: 10px 0;
-       }
-       .return {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 200px;
-       }
-       .logout {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 120px;
-       }
-       .logout button {
-           width: 140px;
-           height: 50px;
-           border-radius: 10px;
-           border: none;
-           background-color: #222;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 400px;
-           cursor: pointer;
-           margin-top: -150px;
-       }
-       .logout button:hover {
-           opacity: 0.8;
-       }
-       .return button {
-           width: 150px;
-           height: 40px;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 400;
-           border-radius: 10px;
-           border: none;
-           background-color: #2222229e;
-           transition: 0.5s ease;
-           cursor: pointer;
-       }
-       .return button:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .footer {
-           width: 100%;
-           height: 100px;
-           background-color: #222222f2;
-           color: #fff;
-           padding: 3px;
-           display: flex;
-           flex-direction: column;
-       }
-       .footer .p1 {
-           font-size: 18px;
-           font-weight: 300;
-           margin-left: 25px;
-       }
-       .footer .p {
-           font-size: 13.9px;
-           font-weight: 300;
-           margin-bottom: 50px;
-           display: flex;
-           flex-direction: column;
-       }
-       .footer .p2 {
-           font-size: 13.9px;
-           font-weight: 300;
-       }
-       .footer .p .p1 {
-           margin-left: 150px;
-       }
-   }
-   
-   @media(min-width:361px) and (max-width:480px) {
-       .enter {
-           width: 100%;
-           height: 100%;
-           position: fixed;
-           z-index: 222;
-           background-color: #222222ab;
-           color: #fff;
-           align-items: center;
-           padding-top: 110px;
-           display: flex;
-           flex-direction: column;
-       }
-       .enter h3 {
-           font-size: 2em;
-           font-weight: 600;
-           color: #aeaeb9;
-           margin-bottom: 10px;
-       }
-       .enter input {
-           width: 200px;
-           height: 40px;
-       }
-       .contentEnter {
-           flex-direction: column;
-           display: flex;
-           width: 300px;
-           height: 290px;
-           background-color: #f1e7e7;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-       }
-       .contentEnter h3 {
-           font-size: 21px;
-           font-weight: 600;
-           color: #222;
-           margin-bottom: 10px;
-       }
-       .contentEnter input {
-           margin: 7px;
-           padding: 10px;
-           font-size: 16px;
-           font-weight: 400;
-           width: 280px;
-           height: 60px;
-           border-radius: 10px;
-           border: 1px solid #e0bcbc;
-       }
-       .password,
-       .Gmail {
-           width: 350px;
-           height: 57px;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           color: #222;
-           margin-bottom: 7px;
-           border-radius: 10px;
-           background-color: #d7c6c600;
-       }
-       .password input,
-       .Gmail input {
-           width: 280px;
-           height: 100%;
-           display: flex;
-       }
-       .password i {
-           margin-left: 240px;
-           position: fixed;
-           cursor: pointer;
-           display: flex;
-           font-size: 1.2em;
-       }
-       .password i:hover {
-           opacity: 0.8;
-       }
-       .contentEnter button {
-           width: 280px;
-           height: 45px;
-           background-color: #0000ffbf;
-           border-radius: 10px;
-           color: #fff;
-           font-size: 1.3em;
-           font-weight: 700;
-           border: none;
-           cursor: pointer;
-       }
-       .contentEnter button:hover {
-           opacity: 0.8;
-       }
-       .buttonUpdate {
-           width: 120px;
-           height: 35px;
-           background-color: #544545;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 10px;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 700;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-       }
-       .buttonUpdate:hover {
-           opacity: 0.7;
-       }
-       .contentEnter a {
-           margin-top: 10px;
-           font-size: 18px;
-           font-weight: 400;
-           color: #1515a1e0;
-       }
-       .head {
-           width: 100%;
-           height: 65px;
-           padding: 10px;
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-           background-color: #f0f0f0;
-           z-index: 22;
-           position: fixed;
-       }
-       .leftHead,
-       .rightHead {
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-       }
-       .icon1 {
-           margin-left: 15px;
-           font-size: 1.3em;
-           font-weight: 400;
-           cursor: pointer;
-       }
-       .centerHead {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex-direction: column;
-           flex: 1;
-           gap: 10px;
-       }
-       .centerHead h1 {
-           margin-top: 5px;
-           font-size: 1.3em;
-           font-weight: 700;
-       }
-       .centerHead input {
-           width: 140px;
-           height: 10px;
-           padding: 10px;
-           font-size: 17px;
-       }
-       .centerHead input:focus {
-           outline: none;
-           border: 2px solid #333;
-           background-color: #fff;
-       }
-       .centerHead button {
-           width: 30px;
-           height: 24.7px;
-           background-color: #333;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 400;
-           cursor: pointer;
-       }
-       .centerHead button:hover {
-           background-color: #555;
-       }
-       .sec1 {
-           width: 100%;
-           height: 100vh;
-           position: relative;
-           overflow: hidden;
-       }
-       .sec1 .img {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           z-index: 1;
-       }
-       .sec1 .overlay {
-           position: absolute;
-           display: flex;
-           z-index: 2;
-           width: 100%;
-           height: 100%;
-       }
-       .sec1 .h1 {
-           color: #fff;
-           font-size: 2.7em;
-           font-weight: 600;
-           position: absolute;
-           z-index: 2;
-           padding: 150px 0 0 100px;
-           display: flex;
-       }
-       .sec1 .p {
-           position: absolute;
-           padding: 280px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           font-size: 1.9em;
-           font-weight: 500;
-       }
-       .sec1 .a {
-           position: absolute;
-           margin: 350px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           width: 100px;
-           height: 40px;
-           border-radius: 10px;
-           background-color: #3d3d43;
-           border: none;
-           color: #fff;
-           transition: 0.6s ease;
-           cursor: pointer;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-       }
-       .sec1 .a:hover {
-           transform: scale(1.1);
-           opacity: 2;
-       }
-       .sec1 .a span {
-           font-size: 18px;
-           font-weight: 300;
-       }
-       .hr {
-           height: 4px;
-           width: 100%;
-           background-color: #d3b2b2;
-       }
-       .sec2 {
-           width: 100%;
-           min-height: 100vh;
-           height: auto;
-           background-color: #333333b8;
-           z-index: 1;
-           position: relative;
-           display: flex;
-           justify-content: center;
-       }
-       .sec2 .content {
-           width: 1050px;
-           min-height: 80vh;
-           height: auto;
-           justify-content: center;
-           flex-wrap: wrap;
-           display: flex;
-       }
-       .content .card {
-           width: 180px;
-           height: 60vh;
-           margin: 23px;
-           background-color: #ffffffa3;
-           border-radius: 10px;
-           box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
-           cursor: pointer;
-       }
-       .content .card .img {
-           width: 100%;
-           height: 120px;
-           border-radius: 10px 10px 0 0;
-       }
-       .content .card .info {
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           width: 100%;
-           flex-direction: column;
-       }
-       .content .card .info .h3 {
-           font-size: 2em;
-           font-weight: 700;
-       }
-       .content .card .info .p {
-           font-size: 20px;
-           font-weight: 600;
-           margin: 20px;
-           text-align: center;
-           line-height: 1.6;
-           margin: 7px 20px;
-       }
-       .content .card .info .a {
-           width: 70px;
-           height: 40px;
-           background-color: #222;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-           color: #fff;
-           transition: 0.7s ease;
-       }
-       .content .card .info .a:hover {
-           transform: scale(1.06);
-           opacity: 0.8;
-       }
-       .sec2 .cardsContainer {
-           width: 230px;
-           height: 130vh;
-           justify-content: center;
-           align-items: center;
-           flex-wrap: wrap;
-           flex-direction: column;
-           display: flex;
-           margin-top: 1px;
-           text-align: center;
-       }
-       .contentCardsWatches .sectionTitle {
-           width: 100%;
-           text-align: center;
-           margin-top: 20px;
-           color: #f9dfdf;
-           font-size: 1.4em;
-           letter-spacing: 1px;
-       }
-       .CardsWatches {
-           width: 100px;
-           height: 235px;
-           background-color: #222;
-           margin: 5px;
-           text-align: center;
-           border-radius: 10px;
-           color: #fff;
-       }
-       .cardsContainer .img {
-           width: 100%;
-           height: 110px;
-           border-radius: 10px 10px 0 0;
-       }
-       .cardsContainer .h3 {
-           font-size: 16px;
-           font-weight: 500;
-           letter-spacing: 3px;
-           margin: 10px;
-       }
-       .cardsContainer .cardButton {
-           width: 90px;
-           height: 25px;
-           margin-top: 15px;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-           background-color: #ddcbcb;
-           font-size: 16px;
-           font-weight: 400;
-           transition: 0.5s ease;
-       }
-       .cardsContainer .cardButton:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .cart_icon {
-           top: 29%;
-           left: 15%;
-           position: absolute;
-           display: flex;
-       }
-       .cart_icon i {
-           font-size: 12.9em;
-           color: #fff;
-           z-index: 1;
-           margin-top: 10px;
-       }
-       .cart_texts {
-           position: absolute;
-           top: 45%;
-           left: 56%;
-           transform: translate(-50%, -50%);
-           text-align: center;
-           z-index: 2;
-           width: 150px;
-       }
-       .span1,
-       .span2 {
-           font-size: 1.2em;
-           font-weight: 600;
-           color: #222;
-           display: block;
-           margin: 10px 0;
-       }
-       .return {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 190px;
-       }
-       .logout {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 120px;
-       }
-       .logout button {
-           width: 140px;
-           height: 50px;
-           border-radius: 10px;
-           border: none;
-           background-color: #222;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 400px;
-           cursor: pointer;
-           margin-top: -150px;
-       }
-       .logout button:hover {
-           opacity: 0.8;
-       }
-       .return button {
-           width: 150px;
-           height: 40px;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 400;
-           border-radius: 10px;
-           border: none;
-           background-color: #2222229e;
-           transition: 0.5s ease;
-           cursor: pointer;
-       }
-       .return button:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .footer {
-           width: 100%;
-           height: 110px;
-           background-color: #222222f2;
-           color: #fff;
-           padding: 3px;
-           display: flex;
-           flex-direction: column;
-       }
-       .footer .p1 {
-           font-size: 20px;
-           font-weight: 300;
-           margin-right: 30px;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-bottom: 10px;
-       }
-       .footer .p {
-           font-size: 13.9px;
-           font-weight: 300;
-           margin-bottom: 50px;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-       }
-       .footer .p2 {
-           font-size: 18px;
-           font-weight: 300;
-       }
-       .footer .p .p1 {
-           margin-left: 150px;
-       }
-   }
-   
-   @media(min-width:481px) and (max-width:600px) {
-       .enter {
-           width: 100%;
-           height: 100%;
-           position: fixed;
-           z-index: 222;
-           background-color: #222222ab;
-           color: #fff;
-           align-items: center;
-           padding-top: 110px;
-           display: flex;
-           flex-direction: column;
-       }
-       .enter h3 {
-           font-size: 2.3em;
-           font-weight: 600;
-           color: #aeaeb9;
-           margin-bottom: 10px;
-       }
-       .enter input {
-           width: 200px;
-           height: 40px;
-       }
-       .contentEnter {
-           flex-direction: column;
-           display: flex;
-           width: 320px;
-           height: 320px;
-           background-color: #f1e7e7;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-       }
-       .contentEnter h3 {
-           font-size: 1.4em;
-           font-weight: 600;
-           color: #222;
-           margin-bottom: 10px;
-       }
-       .contentEnter input {
-           margin: 7px;
-           padding: 10px;
-           font-size: 16px;
-           font-weight: 400;
-           width: 290px;
-           height: 60px;
-           border-radius: 10px;
-           border: 1px solid #e0bcbc;
-       }
-       .password,
-       .Gmail {
-           width: 350px;
-           height: 57px;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           color: #222;
-           margin-bottom: 7px;
-           border-radius: 10px;
-           background-color: #d7c6c600;
-       }
-       .password input,
-       .Gmail input {
-           width: 290px;
-           height: 100%;
-           display: flex;
-       }
-       .password i {
-           margin-left: 240px;
-           position: fixed;
-           cursor: pointer;
-           display: flex;
-           font-size: 1.2em;
-       }
-       .password i:hover {
-           opacity: 0.8;
-       }
-       .contentEnter button {
-           width: 280px;
-           height: 45px;
-           background-color: #0000ffbf;
-           border-radius: 10px;
-           color: #fff;
-           font-size: 1.3em;
-           font-weight: 700;
-           border: none;
-           cursor: pointer;
-       }
-       .contentEnter button:hover {
-           opacity: 0.8;
-       }
-       .buttonUpdate {
-           width: 140px;
-           height: 40px;
-           background-color: #544545;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 10px;
-           color: #fff;
-           font-size: 19px;
-           font-weight: 700;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-       }
-       .buttonUpdate:hover {
-           opacity: 0.7;
-       }
-       .contentEnter a {
-           margin-top: 10px;
-           font-size: 18px;
-           font-weight: 400;
-           color: #1515a1e0;
-       }
-       .head {
-           width: 100%;
-           height: 65px;
-           padding: 10px;
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-           background-color: #f0f0f0;
-           z-index: 22;
-           position: fixed;
-       }
-       .leftHead,
-       .rightHead {
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-       }
-       .icon1 {
-           margin-left: 20px;
-           font-size: 1.3em;
-           font-weight: 400;
-           cursor: pointer;
-       }
-       .centerHead {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex-direction: column;
-           flex: 1;
-           gap: 10px;
-       }
-       .centerHead h1 {
-           margin-top: 0px;
-           font-size: 1.5em;
-           font-weight: 700;
-       }
-       .centerHead input {
-           width: 185px;
-           height: 10px;
-           padding: 10px;
-           font-size: 17px;
-           border: 0 1px 1px 0;
-       }
-       .centerHead input:focus {
-           outline: none;
-           border: 2px solid #333;
-           background-color: #fff;
-       }
-       .centerHead button {
-           width: 35px;
-           height: 25px;
-           background-color: #333;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 400;
-           cursor: pointer;
-           border: 0 1px 1px 0;
-       }
-       .centerHead button:hover {
-           background-color: #555;
-       }
-       .sec1 {
-           width: 100%;
-           height: 100vh;
-           position: relative;
-           overflow: hidden;
-       }
-       .sec1 .img {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           z-index: 1;
-       }
-       .sec1 .overlay {
-           position: absolute;
-           display: flex;
-           z-index: 2;
-           width: 100%;
-           height: 100%;
-       }
-       .sec1 .h1 {
-           color: #fff;
-           font-size: 2.7em;
-           font-weight: 600;
-           position: absolute;
-           z-index: 2;
-           padding: 150px 0 0 100px;
-           display: flex;
-       }
-       .sec1 .p {
-           position: absolute;
-           padding: 280px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           font-size: 1.9em;
-           font-weight: 500;
-       }
-       .sec1 .a {
-           position: absolute;
-           margin: 350px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           width: 100px;
-           height: 40px;
-           border-radius: 10px;
-           background-color: #3d3d43;
-           border: none;
-           color: #fff;
-           transition: 0.6s ease;
-           cursor: pointer;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-       }
-       .sec1 .a:hover {
-           transform: scale(1.1);
-           opacity: 2;
-       }
-       .sec1 .a span {
-           font-size: 20px;
-           font-weight: 300;
-       }
-       .hr {
-           height: 4px;
-           width: 100%;
-           background-color: #d3b2b2;
-       }
-       .sec2 {
-           width: 100%;
-           min-height: 100vh;
-           height: auto;
-           background-color: #333333b8;
-           z-index: 1;
-           position: relative;
-           display: flex;
-           justify-content: center;
-       }
-       .sec2 .content {
-           width: 1050px;
-           min-height: 80vh;
-           height: auto;
-           justify-content: center;
-           flex-wrap: wrap;
-           display: flex;
-       }
-       .content .card {
-           width: 220px;
-           height: 55vh;
-           margin: 23px;
-           background-color: #ffffffa3;
-           border-radius: 10px;
-           box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
-           cursor: pointer;
-       }
-       .content .card .img {
-           width: 100%;
-           height: 120px;
-           border-radius: 10px 10px 0 0;
-       }
-       .content .card .info {
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           width: 100%;
-           flex-direction: column;
-       }
-       .content .card .info .h3 {
-           font-size: 2.2em;
-           font-weight: 700;
-       }
-       .content .card .info .p {
-           font-size: 22px;
-           font-weight: 600;
-           margin: 20px;
-           text-align: center;
-           line-height: 1.6;
-           margin: 7px 20px;
-       }
-       .content .card .info .a {
-           width: 85px;
-           height: 42px;
-           background-color: #222;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-           color: #fff;
-           transition: 0.7s ease;
-           font-size: 1.3em;
-       }
-       .content .card .info .a:hover {
-           transform: scale(1.06);
-           opacity: 0.8;
-       }
-       .sec2 .cardsContainer {
-           width: 400px;
-           height: 130vh;
-           justify-content: center;
-           align-items: center;
-           flex-wrap: wrap;
-           flex-direction: column;
-           display: flex;
-           margin-top: 1px;
-           text-align: center;
-       }
-       .contentCardsWatches .sectionTitle {
-           width: 100%;
-           text-align: center;
-           margin-top: 20px;
-           color: #f9dfdf;
-           font-size: 1.4em;
-           letter-spacing: 1px;
-       }
-       .CardsWatches {
-           width: 170px;
-           height: 235px;
-           background-color: #222;
-           margin: 5px;
-           text-align: center;
-           border-radius: 10px;
-           color: #fff;
-       }
-       .cardsContainer .img {
-           width: 100%;
-           height: 110px;
-           border-radius: 10px 10px 0 0;
-       }
-       .cardsContainer .h3 {
-           font-size: 16px;
-           font-weight: 500;
-           letter-spacing: 3px;
-           margin: 10px;
-       }
-       .cardsContainer .cardButton {
-           width: 90px;
-           height: 25px;
-           margin-top: 15px;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-           background-color: #ddcbcb;
-           font-size: 16px;
-           font-weight: 400;
-           transition: 0.5s ease;
-       }
-       .cardsContainer .cardButton:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .cart_icon {
-           top: 29%;
-           left: 25%;
-           position: absolute;
-           display: flex;
-       }
-       .cart_icon i {
-           font-size: 12.5em;
-           color: #fff;
-           z-index: 1;
-           margin-top: 10px;
-       }
-       .cart_texts {
-           position: absolute;
-           top: 45%;
-           left: 56%;
-           transform: translate(-50%, -50%);
-           text-align: center;
-           z-index: 2;
-           width: 200px;
-       }
-       .span1,
-       .span2 {
-           font-size: 1.2em;
-           font-weight: 600;
-           color: #222;
-           display: block;
-           margin: 10px 0;
-       }
-       .return {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 190px;
-       }
-       .logout {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 120px;
-       }
-       .logout button {
-           width: 140px;
-           height: 50px;
-           border-radius: 10px;
-           border: none;
-           background-color: #222;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 400px;
-           cursor: pointer;
-           margin-top: -150px;
-       }
-       .logout button:hover {
-           opacity: 0.8;
-       }
-       .return button {
-           width: 160px;
-           height: 45px;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 500;
-           border-radius: 10px;
-           border: none;
-           background-color: #2222229e;
-           transition: 0.5s ease;
-           cursor: pointer;
-       }
-       .return button:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .footer {
-           width: 100%;
-           height: 110px;
-           background-color: #222222f2;
-           color: #fff;
-           padding: 3px;
-           display: flex;
-           flex-direction: column;
-       }
-       .footer .p1 {
-           font-size: 20px;
-           font-weight: 300;
-           margin-right: 30px;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-bottom: 10px;
-       }
-       .footer .p {
-           font-size: 13.9px;
-           font-weight: 300;
-           margin-bottom: 50px;
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-       }
-       .footer .p2 {
-           font-size: 22px;
-           font-weight: 300;
-       }
-       .footer .p .p1 {
-           margin-left: 327px;
-       }
-   }
-   
-   @media(min-width:601px) and (max-width:768px) {
-       .enter {
-           width: 100%;
-           height: 100%;
-           position: fixed;
-           z-index: 222;
-           background-color: #222222ab;
-           color: #fff;
-           align-items: center;
-           padding-top: 110px;
-           display: flex;
-           flex-direction: column;
-       }
-       .enter h3 {
-           font-size: 2.7em;
-           font-weight: 600;
-           color: #aeaeb9;
-           margin-bottom: 10px;
-       }
-       .enter input {
-           width: 200px;
-           height: 40px;
-       }
-       .contentEnter {
-           flex-direction: column;
-           display: flex;
-           width: 320px;
-           height: 320px;
-           background-color: #f1e7e7;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-       }
-       .contentEnter h3 {
-           font-size: 1.7em;
-           font-weight: 600;
-           color: #222;
-           margin-bottom: 10px;
-       }
-       .contentEnter input {
-           margin: 7px;
-           padding: 10px;
-           font-size: 17.5px;
-           font-weight: 400;
-           width: 300px;
-           height: 60px;
-           border-radius: 10px;
-           border: 1px solid #e0bcbc;
-       }
-       .password,
-       .Gmail {
-           width: 350px;
-           height: 57px;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           color: #222;
-           margin-bottom: 7px;
-           border-radius: 10px;
-           background-color: #d7c6c600;
-       }
-       .password input,
-       .Gmail input {
-           width: 300px;
-           height: 100%;
-           display: flex;
-       }
-       .password i {
-           margin-left: 260px;
-           position: fixed;
-           cursor: pointer;
-           display: flex;
-           font-size: 1.222em;
-       }
-       .password i:hover {
-           opacity: 0.8;
-       }
-       .contentEnter button {
-           width: 290px;
-           height: 45px;
-           background-color: #0000ffbf;
-           border-radius: 10px;
-           color: #fff;
-           font-size: 1.3em;
-           font-weight: 700;
-           border: none;
-           cursor: pointer;
-       }
-       .contentEnter button:hover {
-           opacity: 0.8;
-       }
-       .buttonUpdate {
-           width: 140px;
-           height: 40px;
-           background-color: #544545;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 10px;
-           color: #fff;
-           font-size: 19px;
-           font-weight: 700;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-       }
-       .buttonUpdate:hover {
-           opacity: 0.7;
-       }
-       .contentEnter a {
-           margin-top: 10px;
-           font-size: 18px;
-           font-weight: 400;
-           color: #1515a1e0;
-       }
-       .head {
-           width: 100%;
-           height: 65px;
-           padding: 10px;
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-           background-color: #f0f0f0;
-           z-index: 22;
-           position: fixed;
-       }
-       .leftHead,
-       .rightHead {
-           align-items: center;
-           justify-content: space-between;
-           display: flex;
-       }
-       .icon1 {
-           margin-left: 25px;
-           font-size: 1.3em;
-           font-weight: 400;
-           cursor: pointer;
-       }
-       .centerHead {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex-direction: column;
-           flex: 1;
-           gap: 10px;
-       }
-       .nav {
-           width: 250px;
-           height: 28px;
-           justify-content: center;
-           display: flex;
-       }
-       .centerHead h1 {
-           margin-top: 0px;
-           font-size: 1.6em;
-           font-weight: 700;
-       }
-       .centerHead input {
-           width: 205px;
-           height: 10px;
-           padding: 10px;
-           font-size: 17px;
-           border: 0 1px 1px 0;
-       }
-       .centerHead input:focus {
-           outline: none;
-           border: 2px solid #333;
-           background-color: #fff;
-       }
-       .centerHead button {
-           width: 35px;
-           height: 25px;
-           background-color: #333;
-           color: #fff;
-           font-size: 17px;
-           font-weight: 400;
-           cursor: pointer;
-           border: 0 1px 1px 0;
-       }
-       .centerHead button:hover {
-           background-color: #555;
-       }
-       .sec1 {
-           width: 100%;
-           height: 100vh;
-           position: relative;
-           overflow: hidden;
-       }
-       .sec1 .img {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           z-index: 1;
-       }
-       .sec1 .overlay {
-           position: absolute;
-           display: flex;
-           z-index: 2;
-           width: 100%;
-           height: 100%;
-       }
-       .sec1 .h1 {
-           color: #fff;
-           font-size: 3em;
-           font-weight: 600;
-           position: absolute;
-           z-index: 2;
-           padding: 150px 0 0 100px;
-           display: flex;
-       }
-       .sec1 .p {
-           position: absolute;
-           padding: 280px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           font-size: 2em;
-           font-weight: 500;
-       }
-       .sec1 .a {
-           position: absolute;
-           margin: 350px 0 0 100px;
-           z-index: 2;
-           color: #d1afaf;
-           width: 110px;
-           height: 45px;
-           border-radius: 10px;
-           background-color: #3d3d43;
-           border: none;
-           color: #fff;
-           transition: 0.6s ease;
-           cursor: pointer;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-       }
-       .sec1 .a:hover {
-           transform: scale(1.1);
-           opacity: 2;
-       }
-       .sec1 .a span {
-           font-size: 23px;
-           font-weight: 500;
-       }
-       .hr {
-           height: 4px;
-           width: 100%;
-           background-color: #d3b2b2;
-       }
-       .sec2 {
-           width: 100%;
-           min-height: 100vh;
-           height: auto;
-           background-color: #333333b8;
-           z-index: 1;
-           position: relative;
-           display: flex;
-           justify-content: center;
-       }
-       .sec2 .content {
-           width: 1050px;
-           min-height: 80vh;
-           height: auto;
-           justify-content: center;
-           flex-wrap: wrap;
-           display: flex;
-       }
-       .content .card {
-           width: 240px;
-           height: 55vh;
-           margin: 23px;
-           background-color: #ffffffa3;
-           border-radius: 10px;
-           box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
-           cursor: pointer;
-       }
-       .content .card .img {
-           width: 100%;
-           height: 120px;
-           border-radius: 10px 10px 0 0;
-       }
-       .content .card .info {
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           width: 100%;
-           flex-direction: column;
-       }
-       .content .card .info .h3 {
-           font-size: 2.2em;
-           font-weight: 700;
-       }
-       .content .card .info .p {
-           font-size: 22px;
-           font-weight: 600;
-           margin: 20px;
-           text-align: center;
-           line-height: 1.6;
-           margin: 7px 20px;
-       }
-       .content .card .info .a {
-           width: 85px;
-           height: 42px;
-           background-color: #222;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-           color: #fff;
-           transition: 0.7s ease;
-           font-size: 1.3em;
-       }
-       .content .card .info .a:hover {
-           transform: scale(1.06);
-           opacity: 0.8;
-       }
-       .sec2 .cardsContainer {
-           width: 740px;
-           height: 100vh;
-           justify-content: center;
-           align-items: center;
-           flex-wrap: wrap;
-           flex-direction: column;
-           display: flex;
-           margin: 20px 0 0 0;
-           text-align: center;
-       }
-       .contentCardsWatches .sectionTitle {
-           width: 100%;
-           text-align: center;
-           margin-top: 20px;
-           color: #f9dfdf;
-           font-size: 2em;
-           letter-spacing: 1px;
-       }
-       .CardsWatches {
-           width: 190px;
-           height: 260px;
-           background-color: #222;
-           margin: 10px;
-           text-align: center;
-           border-radius: 10px;
-           color: #fff;
-       }
-       .cardsContainer .img {
-           width: 100%;
-           height: 125px;
-           border-radius: 10px 10px 0 0;
-       }
-       .cardsContainer .h3 {
-           font-size: 18px;
-           font-weight: 500;
-           letter-spacing: 3px;
-           margin: 10px;
-       }
-       .cardsContainer .cardButton {
-           width: 100px;
-           height: 30px;
-           margin-top: 15px;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-           background-color: #ddcbcb;
-           font-size: 18px;
-           font-weight: 500;
-           transition: 0.5s ease;
-       }
-       .cardsContainer .cardButton:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .cart_icon {
-           top: 25%;
-           left: 28%;
-           position: absolute;
-           display: flex;
-       }
-       .cart_icon i {
-           font-size: 14.5em;
-           color: #fff;
-           z-index: 1;
-           margin-top: 10px;
-       }
-       .cart_texts {
-           position: absolute;
-           top: 45%;
-           left: 56%;
-           transform: translate(-50%, -50%);
-           text-align: center;
-           z-index: 2;
-           width: 200px;
-       }
-       .span1,
-       .span2 {
-           font-size: 1.4em;
-           font-weight: 600;
-           color: #222;
-           display: block;
-           margin: 10px 0;
-       }
-       .return {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 300px;
-       }
-       .logout {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 120px;
-       }
-       .logout button {
-           width: 140px;
-           height: 50px;
-           border-radius: 10px;
-           border: none;
-           background-color: #222;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 400px;
-           cursor: pointer;
-           margin-top: -150px;
-       }
-       .logout button:hover {
-           opacity: 0.8;
-       }
-       .return button {
-           width: 160px;
-           height: 45px;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 500;
-           border-radius: 10px;
-           border: none;
-           background-color: #2222229e;
-           transition: 0.5s ease;
-           cursor: pointer;
-       }
-       .return button:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .footer {
-           width: 100%;
-           height: 80px;
-           background-color: #222222f2;
-           color: #fff;
-           padding: 20px;
-           justify-content: space-between;
-           display: flex;
-       }
-       .footer .p .p1 {
-           font-size: 16px;
-           font-weight: 300;
-           margin-top: 10px;
-           margin-left: 222px;
-       }
-       .footer .p2 {
-           font-size: 16px;
-           font-weight: 300;
-       }
-       .footer .phone .p1 {
-           margin-top: 0px;
-           width: 100%;
-           height: 40px;
-           display: flex;
-       }
-   }
-   
-   @media(min-width:769px) and (max-width:1024px) {
-       .sec2 {
-           width: 100%;
-           min-height: 100vh;
-           height: auto;
-           background-color: #333333b8;
-           z-index: 1;
-           position: relative;
-           display: flex;
-           justify-content: center;
-       }
-       .sec2 .content {
-           width: 1050px;
-           min-height: 80vh;
-           height: auto;
-           justify-content: center;
-           flex-wrap: wrap;
-           display: flex;
-       }
-       .content .card {
-           width: 240px;
-           height: 55vh;
-           margin: 23px;
-           background-color: #ffffffa3;
-           border-radius: 10px;
-           box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
-           cursor: pointer;
-           margin-top: 100px;
-       }
-       .content .card .img {
-           width: 100%;
-           height: 120px;
-           border-radius: 10px 10px 0 0;
-       }
-       .content .card .info {
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           width: 100%;
-           flex-direction: column;
-       }
-       .content .card .info .h3 {
-           font-size: 2.2em;
-           font-weight: 700;
-       }
-       .content .card .info .p {
-           font-size: 22px;
-           font-weight: 600;
-           margin: 20px;
-           text-align: center;
-           line-height: 1.6;
-           margin: 7px 20px;
-       }
-       .content .card .info .a {
-           width: 85px;
-           height: 42px;
-           background-color: #222;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           border-radius: 10px;
-           color: #fff;
-           transition: 0.7s ease;
-           font-size: 1.3em;
-       }
-       .content .card .info .a:hover {
-           transform: scale(1.06);
-           opacity: 0.8;
-       }
-       .sec2 .cardsContainer {
-           width: 630px;
-           height: 100vh;
-           justify-content: center;
-           align-items: center;
-           flex-wrap: wrap;
-           flex-direction: column;
-           display: flex;
-           margin: 20px 0 0 310px;
-           text-align: center;
-       }
-       .contentCardsWatches .sectionTitle {
-           width: 100%;
-           text-align: center;
-           margin-top: 30px;
-           color: #f9dfdf;
-           font-size: 2em;
-           letter-spacing: 1px;
-       }
-       .CardsWatches {
-           width: 190px;
-           height: 260px;
-           background-color: #222;
-           margin: 10px;
-           text-align: center;
-           border-radius: 10px;
-           color: #fff;
-       }
-       .cardsContainer .img {
-           width: 100%;
-           height: 125px;
-           border-radius: 10px 10px 0 0;
-       }
-       .cardsContainer .h3 {
-           font-size: 18px;
-           font-weight: 500;
-           letter-spacing: 3px;
-           margin: 10px;
-       }
-       .cardsContainer .cardButton {
-           width: 100px;
-           height: 30px;
-           margin-top: 15px;
-           border-radius: 10px;
-           border: none;
-           cursor: pointer;
-           background-color: #ddcbcb;
-           font-size: 18px;
-           font-weight: 500;
-           transition: 0.5s ease;
-       }
-       .cardsContainer .cardButton:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .cart_icon {
-           top: 10%;
-           left: 6%;
-           position: absolute;
-           display: flex;
-       }
-       .cart_icon i {
-           font-size: 14.5em;
-           color: #fff;
-           z-index: 1;
-           margin-top: 10px;
-       }
-       .cart_texts {
-           position: absolute;
-           top: 45%;
-           left: 56%;
-           transform: translate(-50%, -50%);
-           text-align: center;
-           z-index: 2;
-           width: 200px;
-       }
-       .span1,
-       .span2 {
-           font-size: 1.4em;
-           font-weight: 600;
-           color: #222;
-           display: block;
-           margin: 10px 0;
-       }
-       .return {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 30px;
-       }
-       .logout {
-           width: 100%;
-           align-items: center;
-           justify-content: center;
-           display: flex;
-           margin-top: 190px;
-       }
-       .logout button {
-           width: 140px;
-           height: 50px;
-           border-radius: 10px;
-           border: none;
-           background-color: #222;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 400px;
-           cursor: pointer;
-           margin-top: -150px;
-       }
-       .logout button:hover {
-           opacity: 0.8;
-       }
-       .return button {
-           width: 160px;
-           height: 45px;
-           color: #fff;
-           font-size: 18px;
-           font-weight: 500;
-           border-radius: 10px;
-           border: none;
-           background-color: #2222229e;
-           transition: 0.5s ease;
-           cursor: pointer;
-       }
-       .return button:hover {
-           opacity: 0.7;
-           transform: scale(1.06);
-       }
-       .footer {
-           width: 100%;
-           height: 80px;
-           background-color: #222222f2;
-           color: #fff;
-           padding: 20px;
-           justify-content: space-between;
-           display: flex;
-       }
-       .footer .p1 {
-           font-size: 18px;
-           font-weight: 300;
-           margin-top: 10px;
-           margin-left: 25px;
-       }
-       .footer .p2 {
-           font-size: 18px;
-           font-weight: 300;
-       }
-       .footer {
-           width: 100%;
-           height: 80px;
-           background-color: #222222f2;
-           color: #fff;
-           padding: 20px;
-           justify-content: space-between;
-           display: flex;
-       }
-       .footer .p .p1 {
-           font-size: 18px;
-           font-weight: 300;
-           margin-top: 10px;
-           margin-left: 252px;
-       }
-       .footer .p2 {
-           font-size: 18px;
-           font-weight: 300;
-       }
-       .footer .phone .p1 {
-           margin-top: 0px;
-           font-size: 1.4em;
-           width: 100%;
-           height: 40px;
-           display: flex;
-       }
-   }
+.enter {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 222;
+    background-color: #222222ab;
+    color: #fff;
+    align-items: center;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.enter h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #aeaeb9;
+    margin-bottom: 10px;
+}
+
+.enter input {
+    width: 270px;
+    height: 40px;
+}
+
+.contentEnter {
+    flex-direction: column;
+    display: flex;
+    width: 380px;
+    height: 330px;
+    background-color: #f1e7e7;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.contentEnter h3 {
+    font-size: 1.7em;
+    font-weight: 500;
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.password,
+.Gmail {
+    width: 360px;
+    height: 57px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #222;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #d7c6c600;
+}
+
+.password input,
+.Gmail input {
+    width: 360px;
+    height: 100%;
+    display: flex;
+    margin: 7px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    width: 350px;
+    height: 57px;
+    border-radius: 10px;
+    border: 1px solid #e0bcbc;
+}
+
+.password i {
+    margin-left: 300px;
+    position: fixed;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+}
+
+.password i:hover {
+    opacity: 0.8;
+}
+
+.contentEnter button {
+    width: 340px;
+    height: 55px;
+    background-color: #0000ffbf;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.contentEnter button:hover {
+    opacity: 0.8;
+}
+
+.buttonUpdate {
+    width: 140px;
+    height: 40px;
+    background-color: #544545;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonUpdate:hover {
+    opacity: 0.7;
+}
+
+.contentEnter a {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #1515a1e0;
+}
+
+.head {
+    width: 100%;
+    height: 65px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #f0f0f0;
+    z-index: 22;
+    position: fixed;
+}
+
+.leftHead,
+.rightHead {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.icon1 {
+    margin-left: 30px;
+    font-size: 1.4em;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.centerHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 10px;
+}
+
+.centerHead h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.centerHead input {
+    width: 230px;
+    height: 30px;
+    padding: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: end;
+    color: #222;
+}
+
+.centerHead input:focus {
+    outline: none;
+    border: 2px solid #333;
+    background-color: #fff;
+}
+
+.centerHead button {
+    width: 40px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.centerHead button:hover {
+    background-color: #555;
+}
+
+.sec1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.sec1 .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.sec1 .overlay {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.sec1 .h1 {
+    color: #fff;
+    font-size: 3.3em;
+    font-weight: 500;
+    position: absolute;
+    z-index: 2;
+    padding: 100px 0 0 100px;
+    display: flex;
+}
+
+.sec1 .p {
+    position: absolute;
+    padding: 250px 0 0 100px;
+    z-index: 2;
+    color: #d1afaf;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.sec1 .a {
+    position: absolute;
+    margin: 350px 0 0 100px;
+    z-index: 2;
+    color: #d1afaf;
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #3d3d43;
+    border: none;
+    color: #fff;
+    transition: 0.6s ease;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.sec1 .a:hover {
+    transform: scale(1.1);
+    opacity: 2;
+}
+
+.sec1 .a span {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.hr {
+    height: 4px;
+    width: 100%;
+    background-color: #d3b2b2;
+}
+
+.sec2 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #333333b8;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.sec2 .content {
+    width: 1050px;
+    min-height: 80vh;
+    height: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.content .card {
+    width: 240px;
+    height: 60vh;
+    margin: 150px 55px 0 0;
+    background-color: #ffffffa3;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
+    cursor: pointer;
+}
+
+.content .card .img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+.content .card .info {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.content .card .info .h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.content .card .info .p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 25px;
+    text-align: center;
+    line-height: 1.6;
+    margin: 15px 20px;
+}
+
+.content .card .info .a {
+    width: 100px;
+    height: 40px;
+    background-color: #222;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.7s ease;
+}
+
+.content .card .info .a:hover {
+    transform: scale(1.06);
+    opacity: 0.8;
+}
+
+.sec2 .cardsContainer {
+    width: 1050px;
+    height: 110vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contentCardsWatches .sectionTitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #f9dfdf;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.CardsWatches {
+    width: 250px;
+    height: 270px;
+    background-color: #222;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.cardsContainer .img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cardsContainer .h3 {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 10px;
+}
+
+.cardsContainer .cardButton {
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ddcbcb;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.cardsContainer .cardButton:hover {
+    opacity: 0.7;
+    transform: scale(1.06);
+}
+
+.cart_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.cart_icon i {
+    font-size: 15em;
+    color: #fff;
+    z-index: 1;
+}
+
+.cart_texts {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.span1,
+.span2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #222;
+    display: block;
+    margin: 10px 0;
+}
+
+.return {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.logout {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 120px 30px 10px 0;
+}
+
+.logout button {
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400px;
+    cursor: pointer;
+}
+
+.logout button:hover {
+    opacity: 0.8;
+}
+
+.return button {
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 10px;
+    border: none;
+    background-color: #2222229e;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.return button:hover {
+    opacity: 0.7;
+    transform: scale(1.06);
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: #222222f2;
+    color: #fff;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer .p1 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.footer .p2 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+@media(max-width:360px) {
+    .enter {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 222;
+        background-color: #222222ab;
+        color: #fff;
+        align-items: center;
+        padding-top: 110px;
+        display: flex;
+        flex-direction: column;
+    }
+    .enter h3 {
+        font-size: 1.7em;
+        font-weight: 600;
+        color: #aeaeb9;
+        margin-bottom: 10px;
+    }
+    .enter input {
+        width: 200px;
+        height: 40px;
+    }
+    .contentEnter {
+        flex-direction: column;
+        display: flex;
+        width: 300px;
+        height: 290px;
+        background-color: #f1e7e7;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+    }
+    .contentEnter h3 {
+        font-size: 17px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    .contentEnter input {
+        margin: 7px;
+        padding: 2px;
+        font-size: 15px;
+        font-weight: 400;
+        width: 280px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #e0bcbc;
+        text-align: end;
+    }
+    .password,
+    .Gmail {
+        width: 350px;
+        height: 57px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: #222;
+        margin-bottom: 7px;
+        border-radius: 10px;
+        background-color: #d7c6c600;
+    }
+    .Gmail input,
+    .password input {
+        width: 280px;
+        height: 100%;
+        display: flex;
+        padding: 10px;
+        text-align: left;
+    }
+    .password i {
+        margin-left: 240px;
+        position: fixed;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.2em;
+    }
+    .password i:hover {
+        opacity: 0.8;
+    }
+    .contentEnter button {
+        width: 280px;
+        height: 45px;
+        background-color: #0000ffbf;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+    }
+    .contentEnter button:hover {
+        opacity: 0.8;
+    }
+    .buttonUpdate {
+        width: 120px;
+        height: 35px;
+        background-color: #544545;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .buttonUpdate:hover {
+        opacity: 0.7;
+    }
+    .contentEnter a {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1515a1e0;
+    }
+    .head {
+        width: 100%;
+        height: 65px;
+        padding: 5px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        background-color: #f0f0f0;
+        z-index: 22;
+        position: fixed;
+    }
+    .leftHead,
+    .rightHead {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .icon1 {
+        margin-left: 7px;
+        font-size: 1.2em;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .centerHead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 3px;
+        flex: 1;
+        gap: 10px;
+    }
+    .centerHead h1 {
+        margin-top: 5px;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    .centerHead input {
+        width: 120px;
+        height: 10px;
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .centerHead input:focus {
+        outline: none;
+        border: 2px solid #333;
+        background-color: #fff;
+    }
+    .centerHead button {
+        width: 25px;
+        height: 25px;
+        background-color: #333;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .centerHead button:hover {
+        background-color: #555;
+    }
+    .sec1 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .sec1 .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .sec1 .overlay {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .sec1 .h1 {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 500;
+        position: absolute;
+        z-index: 2;
+        padding: 150px 0 0 100px;
+        display: flex;
+    }
+    .sec1 .p {
+        position: absolute;
+        padding: 250px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .sec1 .a {
+        position: absolute;
+        margin: 350px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        width: 90px;
+        height: 35px;
+        border-radius: 10px;
+        background-color: #3d3d43;
+        border: none;
+        color: #fff;
+        transition: 0.6s ease;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sec1 .a:hover {
+        transform: scale(1.1);
+        opacity: 2;
+    }
+    .sec1 .a span {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .hr {
+        height: 4px;
+        width: 100%;
+        background-color: #d3b2b2;
+    }
+    .sec2 {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-color: #333333b8;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .sec2 .content {
+        width: 1050px;
+        min-height: 80vh;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .content .card {
+        width: 105px;
+        height: 67vh;
+        margin: 8px;
+        background-color: #ffffffa3;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
+        cursor: pointer;
+    }
+    .content .card .img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+    }
+    .content .card .info {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .card .info .h3 {
+        font-size: 1.7em;
+        font-weight: 700;
+    }
+    .content .card .info .p {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 20px;
+        text-align: center;
+        line-height: 1.6;
+        margin: 7px 20px;
+    }
+    .content .card .info .a {
+        width: 70px;
+        height: 40px;
+        background-color: #222;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+        color: #fff;
+        transition: 0.7s ease;
+    }
+    .content .card .info .a:hover {
+        transform: scale(1.06);
+        opacity: 0.8;
+    }
+    .sec2 .cardsContainer {
+        width: 230px;
+        height: 130vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        margin-top: 1px;
+        text-align: center;
+    }
+    .contentCardsWatches .sectionTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        color: #f9dfdf;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    .CardsWatches {
+        width: 100px;
+        height: 235px;
+        background-color: #222;
+        margin: 5px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .cardsContainer .img {
+        width: 100%;
+        height: 110px;
+        border-radius: 10px 10px 0 0;
+    }
+    .cardsContainer .h3 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin: 10px;
+    }
+    .cardsContainer .cardButton {
+        width: 90px;
+        height: 25px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #ddcbcb;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.5s ease;
+    }
+    .cardsContainer .cardButton:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .cart_icon {
+        top: 29%;
+        left: 9%;
+        position: absolute;
+        display: flex;
+    }
+    .cart_icon i {
+        font-size: 13.5em;
+        color: #fff;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    .cart_texts {
+        position: absolute;
+        top: 45%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        width: 150px;
+    }
+    .span1,
+    .span2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #222;
+        display: block;
+        margin: 10px 0;
+    }
+    .return {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 200px;
+    }
+    .logout {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 120px;
+    }
+    .logout button {
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400px;
+        cursor: pointer;
+        margin-top: -150px;
+    }
+    .logout button:hover {
+        opacity: 0.8;
+    }
+    .return button {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+        background-color: #2222229e;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .return button:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: #222222f2;
+        color: #fff;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .p1 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-left: 25px;
+    }
+    .footer .p {
+        font-size: 13.9px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .p2 {
+        font-size: 13.9px;
+        font-weight: 300;
+    }
+    .footer .p .p1 {
+        margin-left: 150px;
+    }
+}
+
+@media(min-width:361px) and (max-width:480px) {
+    .enter {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 222;
+        background-color: #222222ab;
+        color: #fff;
+        align-items: center;
+        padding-top: 110px;
+        display: flex;
+        flex-direction: column;
+    }
+    .enter h3 {
+        font-size: 2em;
+        font-weight: 600;
+        color: #aeaeb9;
+        margin-bottom: 10px;
+    }
+    .enter input {
+        width: 200px;
+        height: 40px;
+    }
+    .contentEnter {
+        flex-direction: column;
+        display: flex;
+        width: 300px;
+        height: 290px;
+        background-color: #f1e7e7;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+    }
+    .contentEnter h3 {
+        font-size: 21px;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    .contentEnter input {
+        margin: 7px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 280px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #e0bcbc;
+    }
+    .password,
+    .Gmail {
+        width: 350px;
+        height: 57px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: #222;
+        margin-bottom: 7px;
+        border-radius: 10px;
+        background-color: #d7c6c600;
+    }
+    .password input,
+    .Gmail input {
+        width: 280px;
+        height: 100%;
+        display: flex;
+    }
+    .password i {
+        margin-left: 240px;
+        position: fixed;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.2em;
+    }
+    .password i:hover {
+        opacity: 0.8;
+    }
+    .contentEnter button {
+        width: 280px;
+        height: 45px;
+        background-color: #0000ffbf;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+    }
+    .contentEnter button:hover {
+        opacity: 0.8;
+    }
+    .buttonUpdate {
+        width: 120px;
+        height: 35px;
+        background-color: #544545;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 700;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .buttonUpdate:hover {
+        opacity: 0.7;
+    }
+    .contentEnter a {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1515a1e0;
+    }
+    .head {
+        width: 100%;
+        height: 65px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        background-color: #f0f0f0;
+        z-index: 22;
+        position: fixed;
+    }
+    .leftHead,
+    .rightHead {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .icon1 {
+        margin-left: 15px;
+        font-size: 1.3em;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .centerHead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+    }
+    .centerHead h1 {
+        margin-top: 5px;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+    .centerHead input {
+        width: 140px;
+        height: 10px;
+        padding: 10px;
+        font-size: 17px;
+    }
+    .centerHead input:focus {
+        outline: none;
+        border: 2px solid #333;
+        background-color: #fff;
+    }
+    .centerHead button {
+        width: 30px;
+        height: 24.7px;
+        background-color: #333;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .centerHead button:hover {
+        background-color: #555;
+    }
+    .sec1 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .sec1 .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .sec1 .overlay {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .sec1 .h1 {
+        color: #fff;
+        font-size: 2.7em;
+        font-weight: 600;
+        position: absolute;
+        z-index: 2;
+        padding: 150px 0 0 100px;
+        display: flex;
+    }
+    .sec1 .p {
+        position: absolute;
+        padding: 280px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        font-size: 1.9em;
+        font-weight: 500;
+    }
+    .sec1 .a {
+        position: absolute;
+        margin: 350px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #3d3d43;
+        border: none;
+        color: #fff;
+        transition: 0.6s ease;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sec1 .a:hover {
+        transform: scale(1.1);
+        opacity: 2;
+    }
+    .sec1 .a span {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .hr {
+        height: 4px;
+        width: 100%;
+        background-color: #d3b2b2;
+    }
+    .sec2 {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-color: #333333b8;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .sec2 .content {
+        width: 1050px;
+        min-height: 80vh;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .content .card {
+        width: 180px;
+        height: 60vh;
+        margin: 23px;
+        background-color: #ffffffa3;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
+        cursor: pointer;
+    }
+    .content .card .img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+    }
+    .content .card .info {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .card .info .h3 {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .content .card .info .p {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px;
+        text-align: center;
+        line-height: 1.6;
+        margin: 7px 20px;
+    }
+    .content .card .info .a {
+        width: 70px;
+        height: 40px;
+        background-color: #222;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+        color: #fff;
+        transition: 0.7s ease;
+    }
+    .content .card .info .a:hover {
+        transform: scale(1.06);
+        opacity: 0.8;
+    }
+    .sec2 .cardsContainer {
+        width: 230px;
+        height: 130vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        margin-top: 1px;
+        text-align: center;
+    }
+    .contentCardsWatches .sectionTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        color: #f9dfdf;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    .CardsWatches {
+        width: 100px;
+        height: 235px;
+        background-color: #222;
+        margin: 5px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .cardsContainer .img {
+        width: 100%;
+        height: 110px;
+        border-radius: 10px 10px 0 0;
+    }
+    .cardsContainer .h3 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin: 10px;
+    }
+    .cardsContainer .cardButton {
+        width: 90px;
+        height: 25px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #ddcbcb;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.5s ease;
+    }
+    .cardsContainer .cardButton:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .cart_icon {
+        top: 29%;
+        left: 15%;
+        position: absolute;
+        display: flex;
+    }
+    .cart_icon i {
+        font-size: 12.9em;
+        color: #fff;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    .cart_texts {
+        position: absolute;
+        top: 45%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        width: 150px;
+    }
+    .span1,
+    .span2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #222;
+        display: block;
+        margin: 10px 0;
+    }
+    .return {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 190px;
+    }
+    .logout {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 120px;
+    }
+    .logout button {
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400px;
+        cursor: pointer;
+        margin-top: -150px;
+    }
+    .logout button:hover {
+        opacity: 0.8;
+    }
+    .return button {
+        width: 150px;
+        height: 40px;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        border-radius: 10px;
+        border: none;
+        background-color: #2222229e;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .return button:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .footer {
+        width: 100%;
+        height: 110px;
+        background-color: #222222f2;
+        color: #fff;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .p1 {
+        font-size: 20px;
+        font-weight: 300;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .footer .p {
+        font-size: 13.9px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .p2 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .footer .p .p1 {
+        margin-left: 150px;
+    }
+}
+
+@media(min-width:481px) and (max-width:600px) {
+    .enter {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 222;
+        background-color: #222222ab;
+        color: #fff;
+        align-items: center;
+        padding-top: 110px;
+        display: flex;
+        flex-direction: column;
+    }
+    .enter h3 {
+        font-size: 2.3em;
+        font-weight: 600;
+        color: #aeaeb9;
+        margin-bottom: 10px;
+    }
+    .enter input {
+        width: 200px;
+        height: 40px;
+    }
+    .contentEnter {
+        flex-direction: column;
+        display: flex;
+        width: 320px;
+        height: 320px;
+        background-color: #f1e7e7;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+    }
+    .contentEnter h3 {
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    .contentEnter input {
+        margin: 7px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 290px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #e0bcbc;
+    }
+    .password,
+    .Gmail {
+        width: 350px;
+        height: 57px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: #222;
+        margin-bottom: 7px;
+        border-radius: 10px;
+        background-color: #d7c6c600;
+    }
+    .password input,
+    .Gmail input {
+        width: 290px;
+        height: 100%;
+        display: flex;
+    }
+    .password i {
+        margin-left: 240px;
+        position: fixed;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.2em;
+    }
+    .password i:hover {
+        opacity: 0.8;
+    }
+    .contentEnter button {
+        width: 280px;
+        height: 45px;
+        background-color: #0000ffbf;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+    }
+    .contentEnter button:hover {
+        opacity: 0.8;
+    }
+    .buttonUpdate {
+        width: 140px;
+        height: 40px;
+        background-color: #544545;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .buttonUpdate:hover {
+        opacity: 0.7;
+    }
+    .contentEnter a {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1515a1e0;
+    }
+    .head {
+        width: 100%;
+        height: 65px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        background-color: #f0f0f0;
+        z-index: 22;
+        position: fixed;
+    }
+    .leftHead,
+    .rightHead {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .icon1 {
+        margin-left: 20px;
+        font-size: 1.3em;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .centerHead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+    }
+    .centerHead h1 {
+        margin-top: 0px;
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .centerHead input {
+        width: 185px;
+        height: 10px;
+        padding: 10px;
+        font-size: 17px;
+        border: 0 1px 1px 0;
+    }
+    .centerHead input:focus {
+        outline: none;
+        border: 2px solid #333;
+        background-color: #fff;
+    }
+    .centerHead button {
+        width: 35px;
+        height: 25px;
+        background-color: #333;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+        border: 0 1px 1px 0;
+    }
+    .centerHead button:hover {
+        background-color: #555;
+    }
+    .sec1 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .sec1 .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .sec1 .overlay {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .sec1 .h1 {
+        color: #fff;
+        font-size: 2.7em;
+        font-weight: 600;
+        position: absolute;
+        z-index: 2;
+        padding: 150px 0 0 100px;
+        display: flex;
+    }
+    .sec1 .p {
+        position: absolute;
+        padding: 280px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        font-size: 1.9em;
+        font-weight: 500;
+    }
+    .sec1 .a {
+        position: absolute;
+        margin: 350px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #3d3d43;
+        border: none;
+        color: #fff;
+        transition: 0.6s ease;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sec1 .a:hover {
+        transform: scale(1.1);
+        opacity: 2;
+    }
+    .sec1 .a span {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .hr {
+        height: 4px;
+        width: 100%;
+        background-color: #d3b2b2;
+    }
+    .sec2 {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-color: #333333b8;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .sec2 .content {
+        width: 1050px;
+        min-height: 80vh;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .content .card {
+        width: 220px;
+        height: 55vh;
+        margin: 23px;
+        background-color: #ffffffa3;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
+        cursor: pointer;
+    }
+    .content .card .img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+    }
+    .content .card .info {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .card .info .h3 {
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+    .content .card .info .p {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px;
+        text-align: center;
+        line-height: 1.6;
+        margin: 7px 20px;
+    }
+    .content .card .info .a {
+        width: 85px;
+        height: 42px;
+        background-color: #222;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+        color: #fff;
+        transition: 0.7s ease;
+        font-size: 1.3em;
+    }
+    .content .card .info .a:hover {
+        transform: scale(1.06);
+        opacity: 0.8;
+    }
+    .sec2 .cardsContainer {
+        width: 400px;
+        height: 130vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        margin-top: 1px;
+        text-align: center;
+    }
+    .contentCardsWatches .sectionTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        color: #f9dfdf;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    .CardsWatches {
+        width: 170px;
+        height: 235px;
+        background-color: #222;
+        margin: 5px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .cardsContainer .img {
+        width: 100%;
+        height: 110px;
+        border-radius: 10px 10px 0 0;
+    }
+    .cardsContainer .h3 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin: 10px;
+    }
+    .cardsContainer .cardButton {
+        width: 90px;
+        height: 25px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #ddcbcb;
+        font-size: 16px;
+        font-weight: 400;
+        transition: 0.5s ease;
+    }
+    .cardsContainer .cardButton:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .cart_icon {
+        top: 29%;
+        left: 25%;
+        position: absolute;
+        display: flex;
+    }
+    .cart_icon i {
+        font-size: 12.5em;
+        color: #fff;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    .cart_texts {
+        position: absolute;
+        top: 45%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        width: 200px;
+    }
+    .span1,
+    .span2 {
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #222;
+        display: block;
+        margin: 10px 0;
+    }
+    .return {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 190px;
+    }
+    .logout {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 120px;
+    }
+    .logout button {
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400px;
+        cursor: pointer;
+        margin-top: -150px;
+    }
+    .logout button:hover {
+        opacity: 0.8;
+    }
+    .return button {
+        width: 160px;
+        height: 45px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: none;
+        background-color: #2222229e;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .return button:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .footer {
+        width: 100%;
+        height: 110px;
+        background-color: #222222f2;
+        color: #fff;
+        padding: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer .p1 {
+        font-size: 20px;
+        font-weight: 300;
+        margin-right: 30px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .footer .p {
+        font-size: 13.9px;
+        font-weight: 300;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer .p2 {
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .footer .p .p1 {
+        margin-left: 327px;
+    }
+}
+
+@media(min-width:601px) and (max-width:768px) {
+    .enter {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 222;
+        background-color: #222222ab;
+        color: #fff;
+        align-items: center;
+        padding-top: 110px;
+        display: flex;
+        flex-direction: column;
+    }
+    .enter h3 {
+        font-size: 2.7em;
+        font-weight: 600;
+        color: #aeaeb9;
+        margin-bottom: 10px;
+    }
+    .enter input {
+        width: 200px;
+        height: 40px;
+    }
+    .contentEnter {
+        flex-direction: column;
+        display: flex;
+        width: 320px;
+        height: 320px;
+        background-color: #f1e7e7;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+    }
+    .contentEnter h3 {
+        font-size: 1.7em;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 10px;
+    }
+    .contentEnter input {
+        margin: 7px;
+        padding: 10px;
+        font-size: 17.5px;
+        font-weight: 400;
+        width: 300px;
+        height: 60px;
+        border-radius: 10px;
+        border: 1px solid #e0bcbc;
+    }
+    .password,
+    .Gmail {
+        width: 350px;
+        height: 57px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: #222;
+        margin-bottom: 7px;
+        border-radius: 10px;
+        background-color: #d7c6c600;
+    }
+    .password input,
+    .Gmail input {
+        width: 300px;
+        height: 100%;
+        display: flex;
+    }
+    .password i {
+        margin-left: 260px;
+        position: fixed;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.222em;
+    }
+    .password i:hover {
+        opacity: 0.8;
+    }
+    .contentEnter button {
+        width: 290px;
+        height: 45px;
+        background-color: #0000ffbf;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+    }
+    .contentEnter button:hover {
+        opacity: 0.8;
+    }
+    .buttonUpdate {
+        width: 140px;
+        height: 40px;
+        background-color: #544545;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 10px;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .buttonUpdate:hover {
+        opacity: 0.7;
+    }
+    .contentEnter a {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        color: #1515a1e0;
+    }
+    .head {
+        width: 100%;
+        height: 65px;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        background-color: #f0f0f0;
+        z-index: 22;
+        position: fixed;
+    }
+    .leftHead,
+    .rightHead {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .icon1 {
+        margin-left: 25px;
+        font-size: 1.3em;
+        font-weight: 400;
+        cursor: pointer;
+    }
+    .centerHead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex: 1;
+        gap: 10px;
+    }
+    .nav {
+        width: 250px;
+        height: 28px;
+        justify-content: center;
+        display: flex;
+    }
+    .centerHead h1 {
+        margin-top: 0px;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+    .centerHead input {
+        width: 205px;
+        height: 10px;
+        padding: 10px;
+        font-size: 17px;
+        border: 0 1px 1px 0;
+    }
+    .centerHead input:focus {
+        outline: none;
+        border: 2px solid #333;
+        background-color: #fff;
+    }
+    .centerHead button {
+        width: 35px;
+        height: 25px;
+        background-color: #333;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 400;
+        cursor: pointer;
+        border: 0 1px 1px 0;
+    }
+    .centerHead button:hover {
+        background-color: #555;
+    }
+    .sec1 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+    .sec1 .img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    .sec1 .overlay {
+        position: absolute;
+        display: flex;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+    .sec1 .h1 {
+        color: #fff;
+        font-size: 3em;
+        font-weight: 600;
+        position: absolute;
+        z-index: 2;
+        padding: 150px 0 0 100px;
+        display: flex;
+    }
+    .sec1 .p {
+        position: absolute;
+        padding: 280px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .sec1 .a {
+        position: absolute;
+        margin: 350px 0 0 100px;
+        z-index: 2;
+        color: #d1afaf;
+        width: 110px;
+        height: 45px;
+        border-radius: 10px;
+        background-color: #3d3d43;
+        border: none;
+        color: #fff;
+        transition: 0.6s ease;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .sec1 .a:hover {
+        transform: scale(1.1);
+        opacity: 2;
+    }
+    .sec1 .a span {
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .hr {
+        height: 4px;
+        width: 100%;
+        background-color: #d3b2b2;
+    }
+    .sec2 {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-color: #333333b8;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .sec2 .content {
+        width: 1050px;
+        min-height: 80vh;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .content .card {
+        width: 240px;
+        height: 55vh;
+        margin: 23px;
+        background-color: #ffffffa3;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
+        cursor: pointer;
+    }
+    .content .card .img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+    }
+    .content .card .info {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .card .info .h3 {
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+    .content .card .info .p {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px;
+        text-align: center;
+        line-height: 1.6;
+        margin: 7px 20px;
+    }
+    .content .card .info .a {
+        width: 85px;
+        height: 42px;
+        background-color: #222;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+        color: #fff;
+        transition: 0.7s ease;
+        font-size: 1.3em;
+    }
+    .content .card .info .a:hover {
+        transform: scale(1.06);
+        opacity: 0.8;
+    }
+    .sec2 .cardsContainer {
+        width: 740px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        margin: 20px 0 0 0;
+        text-align: center;
+    }
+    .contentCardsWatches .sectionTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        color: #f9dfdf;
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .CardsWatches {
+        width: 190px;
+        height: 260px;
+        background-color: #222;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .cardsContainer .img {
+        width: 100%;
+        height: 125px;
+        border-radius: 10px 10px 0 0;
+    }
+    .cardsContainer .h3 {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin: 10px;
+    }
+    .cardsContainer .cardButton {
+        width: 100px;
+        height: 30px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #ddcbcb;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.5s ease;
+    }
+    .cardsContainer .cardButton:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .cart_icon {
+        top: 25%;
+        left: 28%;
+        position: absolute;
+        display: flex;
+    }
+    .cart_icon i {
+        font-size: 14.5em;
+        color: #fff;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    .cart_texts {
+        position: absolute;
+        top: 45%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        width: 200px;
+    }
+    .span1,
+    .span2 {
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #222;
+        display: block;
+        margin: 10px 0;
+    }
+    .return {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 300px;
+    }
+    .logout {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 120px;
+    }
+    .logout button {
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400px;
+        cursor: pointer;
+        margin-top: -150px;
+    }
+    .logout button:hover {
+        opacity: 0.8;
+    }
+    .return button {
+        width: 160px;
+        height: 45px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: none;
+        background-color: #2222229e;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .return button:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .footer {
+        width: 100%;
+        height: 80px;
+        background-color: #222222f2;
+        color: #fff;
+        padding: 20px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .footer .p .p1 {
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-left: 222px;
+    }
+    .footer .p2 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .footer .phone .p1 {
+        margin-top: 0px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+    }
+}
+
+@media(min-width:769px) and (max-width:1024px) {
+    .sec2 {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background-color: #333333b8;
+        z-index: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .sec2 .content {
+        width: 1050px;
+        min-height: 80vh;
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .content .card {
+        width: 240px;
+        height: 55vh;
+        margin: 23px;
+        background-color: #ffffffa3;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(1, 1, 1, 0.5);
+        cursor: pointer;
+        margin-top: 100px;
+    }
+    .content .card .img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px 10px 0 0;
+    }
+    .content .card .info {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .content .card .info .h3 {
+        font-size: 2.2em;
+        font-weight: 700;
+    }
+    .content .card .info .p {
+        font-size: 22px;
+        font-weight: 600;
+        margin: 20px;
+        text-align: center;
+        line-height: 1.6;
+        margin: 7px 20px;
+    }
+    .content .card .info .a {
+        width: 85px;
+        height: 42px;
+        background-color: #222;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 10px;
+        color: #fff;
+        transition: 0.7s ease;
+        font-size: 1.3em;
+    }
+    .content .card .info .a:hover {
+        transform: scale(1.06);
+        opacity: 0.8;
+    }
+    .sec2 .cardsContainer {
+        width: 630px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        margin: 20px 0 0 310px;
+        text-align: center;
+    }
+    .contentCardsWatches .sectionTitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        color: #f9dfdf;
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+    .CardsWatches {
+        width: 190px;
+        height: 260px;
+        background-color: #222;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .cardsContainer .img {
+        width: 100%;
+        height: 125px;
+        border-radius: 10px 10px 0 0;
+    }
+    .cardsContainer .h3 {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        margin: 10px;
+    }
+    .cardsContainer .cardButton {
+        width: 100px;
+        height: 30px;
+        margin-top: 15px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: #ddcbcb;
+        font-size: 18px;
+        font-weight: 500;
+        transition: 0.5s ease;
+    }
+    .cardsContainer .cardButton:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .cart_icon {
+        top: 10%;
+        left: 6%;
+        position: absolute;
+        display: flex;
+    }
+    .cart_icon i {
+        font-size: 14.5em;
+        color: #fff;
+        z-index: 1;
+        margin-top: 10px;
+    }
+    .cart_texts {
+        position: absolute;
+        top: 45%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+        width: 200px;
+    }
+    .span1,
+    .span2 {
+        font-size: 1.4em;
+        font-weight: 600;
+        color: #222;
+        display: block;
+        margin: 10px 0;
+    }
+    .return {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 30px;
+    }
+    .logout {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 190px;
+    }
+    .logout button {
+        width: 140px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #222;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400px;
+        cursor: pointer;
+        margin-top: -150px;
+    }
+    .logout button:hover {
+        opacity: 0.8;
+    }
+    .return button {
+        width: 160px;
+        height: 45px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: none;
+        background-color: #2222229e;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
+    .return button:hover {
+        opacity: 0.7;
+        transform: scale(1.06);
+    }
+    .footer {
+        width: 100%;
+        height: 80px;
+        background-color: #222222f2;
+        color: #fff;
+        padding: 20px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .footer .p1 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    .footer .p2 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .footer {
+        width: 100%;
+        height: 80px;
+        background-color: #222222f2;
+        color: #fff;
+        padding: 20px;
+        justify-content: space-between;
+        display: flex;
+    }
+    .footer .p .p1 {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-left: 252px;
+    }
+    .footer .p2 {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .footer .phone .p1 {
+        margin-top: 0px;
+        font-size: 1.4em;
+        width: 100%;
+        height: 40px;
+        display: flex;
+    }
+}
