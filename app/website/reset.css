@@ -1,61 +1,37 @@
-/* إزالة الهوامش والحشوات الافتراضية */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* تحسين طريقة عرض النصوص */
-
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    /* Safari */
     -moz-text-size-adjust: 100%;
-    /* Firefox */
     text-size-adjust: 100%;
 }
 
-
-/* توحيد الخط الافتراضي */
-
 body {
     font-family: 'Cairo', Arial, sans-serif;
-    /* غيّر الخط حسب رغبتك */
-    line-height: 1.5;
     background-color: #fff;
     color: #000;
 }
-
-
-/* إزالة التنسيقات الافتراضية للروابط */
 
 a {
     text-decoration: none;
     color: inherit;
 }
 
-
-/* إزالة النقاط من القوائم */
-
 ul,
 ol {
     list-style: none;
 }
-
-
-/* جعل الصور والفيديو تتأقلم مع حجم الحاوية */
 
 img,
 video {
     max-width: 100%;
     height: auto;
 }
-
-
-/* إعادة ضبط الأزرار */
 
 button {
     background: none;
@@ -64,17 +40,11 @@ button {
     font: inherit;
 }
 
-
-/* إعادة ضبط الحقول النصية */
-
 input,
 textarea,
 select {
     font: inherit;
 }
-
-
-/* توحيد عرض الجداول */
 
 table {
     border-collapse: collapse;
