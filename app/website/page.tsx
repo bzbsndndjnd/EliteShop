@@ -1,4 +1,5 @@
 "use client";
+import './reset.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
@@ -409,7 +410,7 @@ const logout=()=>{
           <div className={style.phone}><p className={style.p1}>© 2025 متجر النخبة. جميع الحقوق محفوظة.</p></div>
           <div className={style.p}>
           <p className={style.p2}><a href="mailto:MohammedMohammed@gmail.com">MohammedMohammed@gmail.com :</a>تواصل معنا عبر البريد  </p>
-          <p className={style.p1}><a href="">056 728 5197 :رقم الجوال</a></p>
+          <p className={style.p1}><a href="">056 728 5197 :</a>رقم الجوال</p>
           </div>
           </footer>
         </>
